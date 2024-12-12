@@ -1,0 +1,25 @@
+<section class="overflow-hidden position-relative section-artcle-list">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-6">
+                <tw-article-signle [item]="primaryItem"></tw-article-signle>
+            </div>
+            <div class="col-sm-6">
+                <ul *ngIf="items && items.length > 0">
+                    <li *ngFor="let item of items.slice(1)">
+                        <h5><a routerLink="/blogdetail" [queryParams]="{id: item.id}">{{ item.title }}</a></h5>
+                        <div class="date">
+                            <p>
+                                {{ item.publishDate | datex }},
+                                <span> by {{ item.author }}</span>
+                            </p>
+                            <p class="category">
+                                {{ item.categoryName }}
+                            </p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>

@@ -1,0 +1,19 @@
+<section class="overflow-hidden position-relative section-partner" *ngIf="item && article">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-6 info">
+                <div class="inner">
+                    <h6>{{ item.name }}</h6>
+                    <h3 class="font-w-6 mb-3"><a routerLink="/blogdetail" [queryParams]="{id: article.id}">{{ article.title }}</a></h3>
+                    <p class="date">
+                        {{ article.publishDate | datex }},
+                        <span> by {{ article.author }}</span>
+                    </p>
+                </div>
+            </div>
+            <div class="col-sm-6 image">
+                <img [src]="article.image" />
+            </div>
+        </div>
+    </div>
+</section>

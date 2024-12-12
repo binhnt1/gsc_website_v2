@@ -1,0 +1,60 @@
+<tw-knowledge-hub></tw-knowledge-hub>
+<section class="overflow-hidden position-relative section-article-tab">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <ul class="navbar-nav" *ngIf="categories">
+                    <!-- <li class="nav-item">
+                        <a class="nav-link active">All Articles</a>
+                    </li> -->
+                    <li class="nav-item" *ngFor="let item of categories" (click)="choiceCategory(item)">
+                        <a class="nav-link" [ngClass]="{'active': selectedCategory && selectedCategory.id == item.id}">{{ item.name }}</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+<tw-article-highlight [item]="selectedCategory"></tw-article-highlight>
+<section class="overflow-hidden position-relative section-articles" *ngIf="articles && articles.length > 0">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-4" *ngFor="let item of articles.slice(0, 6)">
+                <tw-article-signle [item]="item"></tw-article-signle>
+            </div>
+        </div>
+    </div>
+</section>
+<tw-article-list *ngIf="articles && articles.length > 0" [items]="articles.slice(6, 10)"></tw-article-list>
+<section class="overflow-hidden position-relative section-articles" *ngIf="articles && articles.length > 0">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-4" *ngFor="let item of articles.slice(10)">
+                <tw-article-signle [item]="item"></tw-article-signle>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="overflow-hidden position-relative section-join">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-lg-8 transforming">
+                <div class="mt-10 mb-10">
+                    <h2>Transforming the perception of energy contracts</h2>
+                    <p class="lead">You could be self-employed or a business that needs a more effective route to market, we will give you the power to choose how you want to work.</p>
+                </div>
+            </div>
+            <div class="col-12 col-lg-4 join-us">
+                <a class="btn" href="join-us.html">Join us now <i class="bi bi-chevron-right"></i></a>
+                <p>Instant accessto the best price</p>
+                <div class="cricle"></div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<div *ngIf="loading" class="loading">
+    <div class="loader clear-loader">
+        <img src="assets/images/loader.gif" alt="">
+    </div>
+</div>

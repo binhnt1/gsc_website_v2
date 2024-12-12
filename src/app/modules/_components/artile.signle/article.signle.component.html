@@ -1,0 +1,11 @@
+<div class="article-signle" *ngIf="item">
+    <h6>{{ item.categoryName }}</h6>
+    <div class="image">
+        <img [src]="item.image" />
+    </div>
+    <h3 class="font-w-6 mb-3"><a routerLink="/blogdetail" [queryParams]="{id: item.id}">{{ item.title }}</a></h3>
+    <p class="date">
+        {{ item.publishDate | datex }},
+        <span> by {{ item.author }}</span>
+    </p>
+</div>

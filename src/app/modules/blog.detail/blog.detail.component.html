@@ -1,0 +1,94 @@
+<section class="overflow-hidden position-relative section-article-signle" *ngIf="item">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="info">
+                    <h6>{{item.categoryName}}</h6>
+                    <h3 class="font-w-6 mb-3">{{item.title}}</h3>
+                    <p class="date">
+                        {{ item.publishDate | datex }},
+                        <span> by {{item.author}}</span>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="image">
+                    <img [src]="item.image" />
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="cricle1"></div>
+    <div class="cricle2"></div>
+</section>
+<section class="overflow-hidden position-relative section-article-signle-body" *ngIf="item">
+    <div class="container">
+        <div class="inner">
+            <div class="row">
+                <div class="col-12" [innerHTML]="item.content | sanitizeHtml">
+                    
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <div class="d-flex justify-content-between author">
+                        <div class="d-flex" style="gap: 10px;">
+                            <div>
+                                <img alt="Image" src="assets/images/testimonial/02.jpg" class="img-fluid rounded-circle">
+                            </div>
+                            <div class="ms-3">
+                                <span class="font-w-6 text-dark mb-0">Hiking To Heels</span>
+                                <small class="text-muted fst-italic d-block">Energy broker</small>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="d-flex icon">
+                                <i class="bi bi-twitter"></i>
+                                <i class="bi bi-facebook"></i>
+                                <i class="bi bi-instagram"></i>
+                                <i class="bi bi-link"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="overflow-hidden position-relative section-articles bgcolor" *ngIf="item && item.others">
+    <div class="container">
+        <div class="row">
+            <h2>More from this topic</h2>
+        </div>
+        <div class="row">
+            <div class="col-sm-4" *ngFor="let itm of item.others">
+                <tw-article-signle [item]="itm"></tw-article-signle>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="overflow-hidden position-relative section-join">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-lg-8 transforming">
+                <div class="mt-10 mb-10">
+                    <h2>Transforming the perception of energy contracts</h2>
+                    <p class="lead">You could be self-employed or a business that needs a more effective route to market, we will give you the power to choose how you want to work.</p>
+                </div>
+            </div>
+            <div class="col-12 col-lg-4 join-us">
+                <a class="btn" href="join-us.html">Join us now <i class="bi bi-chevron-right"></i></a>
+                <p>Instant accessto the best price</p>
+                <div class="cricle"></div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<div *ngIf="loading" class="loading">
+    <div class="loader clear-loader">
+        <img src="assets/images/loader.gif" alt="">
+    </div>
+</div>

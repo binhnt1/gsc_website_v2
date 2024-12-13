@@ -11,6 +11,7 @@ $greyishBrown: #404040;
 
 .page-wrapper {
     overflow: unset !important;
+
     .site-header {
         &.sticky {
             top: 0;
@@ -1323,6 +1324,23 @@ $greyishBrown: #404040;
                 }
             }
         }
+
+        h5 {
+            font-size: 24px;
+            font-weight: 500;
+        }
+
+        .text-full {
+            color: #666;
+            font-size: 16px;
+            font-weight: normal;
+
+            b {
+                font-size: 16px;
+                font-weight: 600;
+                margin-bottom: 5px;
+            }
+        }
     }
 
     ul.numbers {
@@ -1364,7 +1382,7 @@ $greyishBrown: #404040;
             padding-left: 0;
 
             li {
-                max-width: 360px;
+                max-width: 300px;
             }
         }
 
@@ -2839,6 +2857,24 @@ input::-webkit-calendar-picker-indicator {
 .cc-cp-foot-byline {
     opacity: 0 !important;
     display: none !important;
+}
+
+#open_preferences_center {
+    display: block;
+    position: fixed;
+    bottom: 10px;
+    left: 10px;
+    border-radius: 10px;
+    padding: 10px 20px;
+    color: #fff;
+    border: 1px solid #ccc;
+    background-color: #000;
+    text-align: center;
+    overflow: hidden;
+    white-space: nowrap;
+    &:hover {
+        width: fit-content;
+    }
 }
 
 @keyframes spin {

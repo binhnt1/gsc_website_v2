@@ -720,7 +720,8 @@ $greyishBrown: #404040;
                 .service-title {
                     color: #fff;
 
-                    h3, a {
+                    h3,
+                    a {
                         color: #fff;
                     }
                 }
@@ -733,7 +734,8 @@ $greyishBrown: #404040;
                 margin-bottom: 20px;
             }
 
-            h3, a {
+            h3,
+            a {
                 font-size: 20px;
                 color: #181818;
                 font-weight: 500;
@@ -1910,7 +1912,10 @@ $greyishBrown: #404040;
 }
 
 .section-header {
+    top: 0;
     padding: 3rem 0;
+    position: sticky;
+    overflow: hidden;
 
     .title {
         display: flex;

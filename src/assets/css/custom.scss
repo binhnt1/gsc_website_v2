@@ -1364,7 +1364,7 @@ $greyishBrown: #404040;
             padding-left: 0;
 
             li {
-                max-width: unset;
+                max-width: 360px;
             }
         }
 
@@ -2834,6 +2834,11 @@ input::-webkit-calendar-picker-indicator {
     opacity: 1;
     color: black;
     position: absolute;
+}
+
+.cc-cp-foot-byline {
+    opacity: 0 !important;
+    display: none !important;
 }
 
 @keyframes spin {

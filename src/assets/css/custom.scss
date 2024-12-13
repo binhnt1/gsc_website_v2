@@ -9,8 +9,21 @@ $headerColor: #f7f8f8;
 $borderColor: #E0E0E0;
 $greyishBrown: #404040;
 
+.page-wrapper {
+    overflow: unset !important;
+    .site-header {
+        &.sticky {
+            top: 0;
+            z-index: 1;
+            position: sticky;
+            background-color: #fff;
+            box-shadow: 0 5px 10px 5px rgba(137, 173, 255, 0.1);
+        }
+    }
+}
+
 #header-wrap {
-    background-color: $bgColor;
+    background-color: transparent;
 
     &.fixed-header {
         background-color: #fff !important;

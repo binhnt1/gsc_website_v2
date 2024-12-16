@@ -2092,7 +2092,7 @@ $greyishBrown: #404040;
     .sub-description {
         display: flex;
         margin: 0 auto;
-        font-size: 24px;
+        font-size: 20px;
         color: #181818;
         max-width: 1100px;
         text-align: center;
@@ -2393,6 +2393,8 @@ $greyishBrown: #404040;
     background-color: #181818;
 
     .container {
+        min-width: 1320px;
+        max-width: calc(100% - 200px);
         .subscribe {
             padding: 50px 40px;
             border-radius: 24px;

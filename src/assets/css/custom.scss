@@ -735,6 +735,7 @@ $greyishBrown: #404040;
                     }
                 }
 
+                h2,
                 h3,
                 h4 {
                     color: #fff;
@@ -760,6 +761,14 @@ $greyishBrown: #404040;
             h3,
             a {
                 font-size: 20px;
+                color: #181818;
+                font-weight: 500;
+                margin-bottom: 20px;
+                transition: none !important;
+            }
+
+            h2 {
+                font-size: 32px;
                 color: #181818;
                 font-weight: 500;
                 margin-bottom: 20px;
@@ -2094,9 +2103,9 @@ $greyishBrown: #404040;
         margin: 0 auto;
         font-size: 20px;
         color: #181818;
+        font-weight: 500;
         max-width: 1100px;
         text-align: center;
-        font-weight: normal;
         align-items: center;
         justify-content: center;
     }
@@ -2161,7 +2170,7 @@ $greyishBrown: #404040;
                 outline: none;
                 font-size: 16px;
                 font-weight: 500;
-                padding: 20px 30px;
+                padding: 17px 19px;
                 width: fit-content;
                 align-items: center;
                 border-radius: 100px;

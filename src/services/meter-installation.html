@@ -119,21 +119,59 @@
                     </div>
                 </div>
             </div>
-            <div class="bg-image mt-10" style="background-image: url(../assets/images/header5.jpeg);"></div>
+            <div class="bg-image mt-10" style="background-image: url(../assets/images/header5.jpeg);">
+                <div class="form">
+                    <form id="submit-form" class="row" method="post">
+                        <h4>Get a Quote</h4>
+                        <div class="form-group col-md-6">
+                            <input id="form_name" type="text" name="name" class="form-control" placeholder="Name" required="required" data-error="Name is required.">
+                            <div id="error_name" class="help-block with-errors"></div>
+                        </div>
+                        <div class="form-group col-md-6">
+                            <input id="form_phone" type="phone" name="phone" class="form-control" placeholder="Phone" required="required" data-error="Phone is required.">
+                            <div id="error_phone" class="help-block with-errors"></div>
+                        </div>
+                        <div class="form-group col-md-12">
+                            <input id="form_address" type="text" name="address" class="form-control" placeholder="Address" required="required" data-error="Address is required.">
+                            <div id="error_address" class="help-block with-errors"></div>
+                        </div>
+                        <div class="form-group col-md-12">
+                            <select required class="form-control">
+                                <option value="" disabled selected hidden>Choose a service</option>
+                                <option value="1">Utility Management</option>
+                                <option value="2">Legal Services</option>
+                                <option value="3">Property Services</option>
+                                <option value="4">Security Services</option>
+                            </select>
+                        </div>
+                        <div class="form-group col-md-12 d-flex form-group-button">
+                            <div class="field-message">
+                                <textarea id="form_message" name="message" class="form-control rounded-4 h-auto" placeholder="Your Message" rows="4" required="required" data-error="Please, leave us a message."></textarea>
+                                <div id="error_message" class="help-block with-errors"></div>
+                            </div>
+                            <a class="button" type="button" id="button-quote">
+                                <svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M17.4885 4.18126C17.47 3.87651 17.3406 3.58908 17.1247 3.3732C16.9088 3.15731 16.6214 3.0279 16.3166 3.00938C15.3338 2.95079 12.8221 3.04063 10.7377 5.12423L10.3666 5.50001H5.80958C5.6448 5.49908 5.48148 5.53093 5.32911 5.59369C5.17675 5.65646 5.03839 5.7489 4.92208 5.86563L2.24239 8.54688C2.07806 8.71111 1.96274 8.91788 1.90939 9.144C1.85603 9.37012 1.86675 9.60664 1.94034 9.82701C2.01393 10.0474 2.14748 10.2429 2.326 10.3916C2.50452 10.5402 2.72095 10.6362 2.95099 10.6688L5.95646 11.0883L9.41036 14.5422L9.82989 17.5492C9.86216 17.7793 9.95812 17.9957 10.1069 18.1741C10.2558 18.3525 10.4515 18.4857 10.6721 18.5586C10.8005 18.6015 10.9351 18.6234 11.0705 18.6234C11.2345 18.6238 11.3969 18.5916 11.5485 18.5289C11.7 18.4661 11.8376 18.374 11.9533 18.2578L14.6346 15.5781C14.7513 15.4618 14.8438 15.3235 14.9065 15.1711C14.9693 15.0187 15.0011 14.8554 15.0002 14.6906V10.1336L15.3729 9.76095C17.4572 7.67657 17.5471 5.16485 17.4885 4.18126ZM5.80958 6.75001H9.11661L6.02833 9.83751L3.12521 9.43282L5.80958 6.75001ZM11.6229 6.01173C12.2234 5.40746 12.946 4.93829 13.7424 4.63557C14.5387 4.33284 15.3905 4.20353 16.2408 4.25626C16.2956 5.10702 16.1676 5.95966 15.8655 6.75686C15.5634 7.55405 15.0941 8.27735 14.4893 8.87813L10.0002 13.3656L7.13458 10.5L11.6229 6.01173ZM13.7502 14.6906L11.0682 17.375L10.6627 14.4711L13.7502 11.3836V14.6906ZM7.95646 15.4328C7.60489 16.2031 6.42911 18 3.12521 18C2.95945 18 2.80048 17.9342 2.68326 17.817C2.56605 17.6997 2.50021 17.5408 2.50021 17.375C2.50021 14.0711 4.29708 12.8953 5.06739 12.543C5.14208 12.5089 5.22275 12.4899 5.30479 12.487C5.38683 12.4841 5.46863 12.4974 5.54553 12.5262C5.62243 12.5549 5.69292 12.5985 5.75297 12.6544C5.81302 12.7104 5.86146 12.7777 5.89552 12.8524C5.92958 12.927 5.9486 13.0077 5.95148 13.0897C5.95437 13.1718 5.94107 13.2536 5.91234 13.3305C5.88361 13.4074 5.84002 13.4779 5.78405 13.5379C5.72808 13.598 5.66083 13.6464 5.58614 13.6805C5.0838 13.9094 3.97521 14.6461 3.77989 16.7203C5.85411 16.525 6.59239 15.4164 6.81974 14.9141C6.8538 14.8394 6.90224 14.7721 6.96229 14.7162C7.02234 14.6602 7.09283 14.6166 7.16973 14.5879C7.24663 14.5591 7.32843 14.5458 7.41047 14.5487C7.49251 14.5516 7.57317 14.5706 7.64786 14.6047C7.72255 14.6388 7.7898 14.6872 7.84577 14.7472C7.90174 14.8073 7.94533 14.8778 7.97406 14.9547C8.00279 15.0316 8.01609 15.1134 8.0132 15.1954C8.01032 15.2775 7.9913 15.3581 7.95724 15.4328H7.95646Z" fill="white" />
+                                </svg>
+                                <span>Submit Request <i class="loading"></i></span>
+                            </a>
+                        </div>
+                        <div id="result_message"></div>
+                    </form>
+                </div>
+            </div>
             <div class="container">
                 <div class="row">
                     <div class="col-12 mt-6">
-                        <p class="sub-description">GSC Agency offers comprehensive security solutions for hotels, ensuring the safety of guests and staff and helping your guests enjoy a peaceful stay. Whether you operate a budget hotel, boutique property, or holiday home, we provide the same level of assurance.</p>
+                        <p class="sub-description">GSC Agency offers comprehensive security solutions for hotels, ensuring the safety of guests.</p>
                     </div>
                     <div class="col-12 mt-6">
-                        <p class="description">Our meter installation officers are committed, responsible, reliable, and bring years of experience in meter installation. With criminals often targeting hotel grounds, car parks, and surrounding areas, our officers are thoroughly trained to prevent theft, vandalism, and other security threats.</p>
+                        <p class="description">Our hotel security officers are committed, responsible, reliable, and bring years of experience in hotel security. With criminals often targeting hotel grounds, car parks, and surrounding areas.</p>
                     </div>
                     <div class="col-12 mt-3">
                         <p class="small-description">We start by meeting you at your location to conduct a site survey and risk assessment, defining the exact service your hotel requires. </p>
                         <p class="small-description">Our management team will then develop an effective security plan, and our supervisor will make regular visits to ensure our high standards are maintained.</p>
-                        <p class="small-description">Our officers are familiar with fire escape routes and floor plans, and many have additional fire marshal and first aid training.
-                            We advise guests to keep all belongings with them at all times to avoid theft, vandalism, or security alerts. Our vigilant team also supports reception staff with customer service duties.
-                        </p>
+                        <p class="small-description">Our officers are familiar with fire escape routes and floor plans, and many have additional fire marshal and first aid training.We start by meeting you at your location to conduct a site survey and risk assessment, defining the exact service your hotel requires. Our management team will then develop an effective security plan, and our supervisor will make regular visits to ensure our high standards are maintained. Our officers are familiar with fire escape routes and floor plans, and many have additional fire marshal and first aid training.We start by meeting you at your location to conduct a site survey and risk assessment, defining the exact service your hotel requires. Our management team will then develop an effective security plan, and our supervisor will make regular visits to ensure our high standards are maintained. Our officers are familiar with fire escape routes and floor plans, and many have additional fire marshal and first aid training.</p>
                     </div>
                 </div>
             </div>

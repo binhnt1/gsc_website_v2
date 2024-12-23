@@ -767,6 +767,10 @@ $greyishBrown: #404040;
                 transition: none !important;
             }
 
+            h3 {
+                font-size: 32px;
+            }
+
             h2 {
                 font-size: 32px;
                 color: #181818;
@@ -2185,7 +2189,7 @@ $greyishBrown: #404040;
         display: flex;
         margin: 0 auto;
         font-size: 16px;
-        color: #181818;
+        color: #666666;
         text-align: center;
         font-weight: normal;
         align-items: center;
@@ -2308,6 +2312,65 @@ $greyishBrown: #404040;
     }
 }
 
+.section-types {
+    padding-bottom: 0;
+    .container {
+        max-width: 1080px;
+        border-radius: 24px;
+        padding: 60px 0 40px 0;
+        background-color: #181818;
+
+        h4 {
+            color: #fff;
+            font-size: 32px;
+            font-weight: 500;
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        p {
+            padding: 0;
+            margin: 0 auto;
+            font-size: 20px;
+            max-width: 900px;
+            color: #A3A3A3;
+            font-weight: normal;
+
+        }
+
+        ul {
+            margin: 0;
+            padding: 0;
+            margin: 0 auto;
+            margin-top: 10px;
+            max-width: 740px;
+            list-style: none;
+
+            li {
+                margin: 0;
+                list-style: none;
+                padding: 30px 30px;
+                border-bottom: 1px solid rgba($color: #E0E0E0, $alpha: 0.5);
+
+                &:last-of-type {
+                    border: none;
+                }
+
+                p {
+                    color: #666666;
+                }
+
+                h5 {
+                    color: #fff;
+                    font-size: 24px;
+                    font-weight: 500;
+                    margin-bottom: 20px;
+                }
+            }
+        }
+    }
+}
+
 .section-service-v2 {
     padding: 0 0 3rem 0;
 
@@ -2324,7 +2387,7 @@ $greyishBrown: #404040;
         img {
             width: 100%;
             object-fit: cover;
-            max-height: 357px;
+            min-height: 380px;
             margin-bottom: 10px;
         }
 
@@ -2418,21 +2481,22 @@ $greyishBrown: #404040;
 
 .section-hotels {
     .container {
-        max-width: 710px;
+        max-width: 940px;
+        text-align: center;
     }
 
     h5 {
         color: #666;
         margin: 0 auto;
         font-size: 16px;
-        max-width: 550px;
+        max-width: 800px;
         font-weight: normal;
     }
 
     h2 {
         margin: 0 auto;
         font-size: 32px;
-        max-width: 550px;
+        max-width: 800px;
         color: #181818;
         font-weight: 500;
         margin-top: 30px;
@@ -2460,8 +2524,8 @@ $greyishBrown: #404040;
 
             p {
                 margin: 0 auto;
-                max-width: 550px;
-                color: #181818;
+                max-width: 800px;
+                color: #666666;
                 padding: 15px 0px;
             }
         }
@@ -2488,8 +2552,9 @@ $greyishBrown: #404040;
             }
 
             p {
-                font-size: 16px;
+                font-size: 20px;
                 color: #A3A3A3;
+                font-weight: 400;
 
                 &.lead {
                     font-size: 20px;

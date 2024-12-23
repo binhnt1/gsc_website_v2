@@ -43,7 +43,7 @@ $(document).ready(function () {
 
     $("#security-services").on('click', function () {
         $('html, body').animate({
-            scrollTop: $('#section-security-services').offset().top
+            scrollTop: $('#section-security-services').offset().top - 100
         }, 300);
     });
 

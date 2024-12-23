@@ -9,6 +9,10 @@ $(document).ready(function () {
         $(this).addClass('active');
     });
 
+    $(function () {
+        $('[data-toggle="tooltip"]').tooltip()
+      })
+
     $('#aboutus-slide .numbers li').on('click', function () {
         $('.aboutus-slide-content').removeClass('active');
         $('#aboutus-slide .numbers li').removeClass('active');
@@ -45,6 +49,75 @@ $(document).ready(function () {
         $('html, body').animate({
             scrollTop: $('#section-security-services').offset().top - 100
         }, 300);
+    });
+
+    $('#button-quote').on('click', function () {
+        $('#error_name').hide();
+        $('#error_phone').hide();
+        $('#error_message').hide();
+        $('#error_address').hide();
+        $('#result_message').html('');
+
+        let name = $('#form_name').val();
+        if (!name) {
+            $('#error_name').html('Name is required');
+            $('#error_name').show();
+            return;
+        }
+
+        let address = $('#form_address').val();
+        if (!address) {
+            $('#error_address').html('Address is required');
+            $('#error_address').show();
+            return;
+        }
+
+        let phone = $('#form_phone').val();
+        if (!phone) {
+            $('#error_phone').html('Phone is required');
+            $('#error_phone').show();
+            return;
+        }
+
+        let message = $('#form_message').val();
+        if (!message) {
+            $('#error_message').html('Message is required');
+            $('#error_message').show();
+            return;
+        }
+
+        $('#button-quote .loading').show();
+        $('#button-quote').prop('disabled', true);
+        $('#button-quote .bi-chevron-right').hide();
+
+        $.ajax({
+            method: 'POST',
+            dataType: "json",
+            data: JSON.stringify({
+                Name: name,
+                Phone: phone,
+                Message: message,
+                Address: address,
+            }),
+            url: api + '/contactUsMessage/bookQuote',
+            contentType: "application/json; charset=utf-8",
+            success: function (result) {
+                $('#button-quote .loading').hide();
+                $('#button-quote').prop('disabled', false);
+                $('#button-quote .bi-chevron-right').show();
+                $('#result_message').html('We have received your quote');
+                $('#form_message').val('');
+                $('#form_address').val('');
+                $('#form_phone').val('');
+                $('#form_name').val('');
+            },
+            error: function () {
+                $('#button-quote .loading').hide();
+                $('#button-quote').prop('disabled', false);
+                $('#button-quote .bi-chevron-right').show();
+                $('#result_message').html('Error, please try again');
+            }
+        });
     });
 
     $('#button-contact-us').on('click', function () {

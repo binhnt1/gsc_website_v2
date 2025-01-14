@@ -208,6 +208,10 @@ $(document).ready(function () {
             );
         }
     }).trigger("change");
+
+    setInterval(function () {
+        $('.es-portal-root a').remove();
+    }, 1000);
 });
 
 function getDomain() {

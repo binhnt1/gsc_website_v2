@@ -867,17 +867,19 @@ $greyishBrown: #404040;
 .section-about-us {
     padding-top: 2rem;
     padding-bottom: 0;
-    background-color: #fff;
+
+    &.bg-color {
+        background: #E0E0E04D;
+    }
 
     .container {
-        padding: 60px 80px;
+        padding-top: 60px;
         border-radius: 40px;
-        background-color: $bgColor;
+        padding-bottom: 60px;
 
         .top-header {
             margin-bottom: 40px;
             padding-bottom: 20px;
-            border-bottom: 1px solid #E6E9EA;
 
             .sub-header {
                 gap: 10px;
@@ -1088,6 +1090,10 @@ $greyishBrown: #404040;
                 border-radius: 100px;
                 justify-content: center;
                 background: #18181866;
+
+                a {
+                    color: #fff;
+                }
 
                 &:hover {
                     background: #181818;
@@ -1929,7 +1935,6 @@ $greyishBrown: #404040;
         display: flex;
         margin: 0 auto;
         font-size: 20px;
-        max-width: 1100px;
         text-align: center;
         line-height: 30px;
         font-weight: normal;
@@ -1946,7 +1951,6 @@ $greyishBrown: #404040;
         margin: 0 auto;
         font-size: 24px;
         color: #181818;
-        max-width: 1100px;
         text-align: center;
         font-weight: normal;
         align-items: center;
@@ -1962,6 +1966,11 @@ $greyishBrown: #404040;
         font-weight: normal;
         align-items: center;
         justify-content: center;
+        &.flex-start {
+            display: block;
+            text-align: left;
+            justify-content: flex-start;
+        }
     }
 
 }
@@ -2004,6 +2013,12 @@ $greyishBrown: #404040;
             max-width: 640px;
             border-radius: 32px;
             background: #181818;
+
+            &.form-homepage {
+                margin-top: 250px;
+                padding-bottom: 170px;
+                box-shadow: 4px 12px 12px 0px rgba(0, 0, 0, 0.4);
+            }
 
             h4 {
                 color: #fff;
@@ -2091,11 +2106,12 @@ $greyishBrown: #404040;
 
     .svg-icon {
         text-align: center;
-        margin: -122px auto 0 auto;
+        margin: 0 auto 0 auto;
 
         svg {
             border-radius: 100%;
             background-color: #fff;
+            box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
         }
     }
 
@@ -2166,7 +2182,6 @@ $greyishBrown: #404040;
         display: flex;
         font-size: 20px;
         margin: 30px auto;
-        max-width: 1100px;
         text-align: center;
         font-weight: normal;
         align-items: center;
@@ -2179,7 +2194,6 @@ $greyishBrown: #404040;
         font-size: 20px;
         color: #181818;
         font-weight: 500;
-        max-width: 1100px;
         text-align: center;
         align-items: center;
         justify-content: center;
@@ -2194,6 +2208,11 @@ $greyishBrown: #404040;
         font-weight: normal;
         align-items: center;
         justify-content: center;
+        &.flex-start {
+            display: block;
+            text-align: left;
+            justify-content: flex-start;
+        }
     }
 }
 
@@ -2314,8 +2333,8 @@ $greyishBrown: #404040;
 
 .section-types {
     padding-bottom: 0;
+
     .container {
-        max-width: 1080px;
         border-radius: 24px;
         padding: 60px 0 40px 0;
         background-color: #181818;
@@ -2331,8 +2350,8 @@ $greyishBrown: #404040;
         p {
             padding: 0;
             margin: 0 auto;
+            max-width: 90%;
             font-size: 20px;
-            max-width: 900px;
             color: #A3A3A3;
             font-weight: normal;
 
@@ -2342,8 +2361,8 @@ $greyishBrown: #404040;
             margin: 0;
             padding: 0;
             margin: 0 auto;
+            max-width: 80%;
             margin-top: 10px;
-            max-width: 740px;
             list-style: none;
 
             li {
@@ -2357,6 +2376,7 @@ $greyishBrown: #404040;
                 }
 
                 p {
+                    max-width: 100%;
                     color: #666666;
                 }
 
@@ -2481,22 +2501,23 @@ $greyishBrown: #404040;
 
 .section-hotels {
     .container {
-        max-width: 940px;
+        padding: 60px 0;
         text-align: center;
+        background: #E0E0E033;
     }
 
     h5 {
         color: #666;
+        max-width: 70%;
         margin: 0 auto;
         font-size: 16px;
-        max-width: 800px;
         font-weight: normal;
     }
 
     h2 {
         margin: 0 auto;
+        max-width: 70%;
         font-size: 32px;
-        max-width: 800px;
         color: #181818;
         font-weight: 500;
         margin-top: 30px;
@@ -2510,6 +2531,7 @@ $greyishBrown: #404040;
     ul {
         padding: 0;
         margin: 0 auto;
+        max-width: 80%;
         margin-top: 30px;
 
         li {
@@ -2537,7 +2559,6 @@ $greyishBrown: #404040;
     background-color: #181818;
 
     .container {
-        min-width: 1320px;
         max-width: calc(100% - 200px);
 
         .subscribe {
@@ -2656,7 +2677,6 @@ $greyishBrown: #404040;
     background-color: #181818;
 
     .container {
-        min-width: 1320px;
         max-width: calc(100% - 200px);
 
         .links {
@@ -3024,6 +3044,16 @@ input::-webkit-calendar-picker-indicator {
     display: none !important;
 }
 
+div.eapps-widget {
+    overflow: hidden;
+}
+
+.es-portal-root {
+    a {
+        display: none;
+    }
+}
+
 #open_preferences_center {
     display: block;
     position: fixed;
@@ -3032,6 +3062,7 @@ input::-webkit-calendar-picker-indicator {
     border-radius: 10px;
     padding: 10px 20px;
     color: #fff;
+    z-index: 10;
     border: 1px solid #ccc;
     background-color: #000;
     text-align: center;
@@ -3046,11 +3077,5 @@ input::-webkit-calendar-picker-indicator {
 @keyframes spin {
     to {
         transform: rotate(360deg);
-    }
-}
-
-@media only screen and (min-width: 2000px) {
-    .container {
-        max-width: 1920px;
     }
 }

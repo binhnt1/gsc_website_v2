@@ -69,7 +69,7 @@
                                             <a class="nav-link" href="aboutus.html">About Us</a>
                                         </li>
                                         <li class="nav-item dropdown">
-                                            <a class="nav-link" href="services-utility.html">Services <i class="bi-chevron-down"></i></a>
+                                            <a class="nav-link">Services <i class="bi-chevron-down"></i></a>
                                             <ul class="dropdown-menu">
                                                 <li>
                                                     <a class="nav-link" href="services-utility.html">Utility Management</a>
@@ -104,7 +104,7 @@
         <section class="overflow-hidden position-relative section-header">
             <div class="container">
                 <div class="row">
-                    <div class="col-12">
+                    <div class="col-sm-12">
                         <div class="sub-header">
                             <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M8.29661 0.90088C8.53823 0.247916 9.46177 0.247916 9.70339 0.900879L11.5812 5.97566C11.6572 6.18095 11.819 6.34281 12.0243 6.41877L17.0991 8.29661C17.7521 8.53823 17.7521 9.46177 17.0991 9.70339L12.0243 11.5812C11.819 11.6572 11.6572 11.819 11.5812 12.0243L9.70339 17.0991C9.46177 17.7521 8.53823 17.7521 8.29661 17.0991L6.41877 12.0243C6.34281 11.819 6.18095 11.6572 5.97566 11.5812L0.90088 9.70339C0.247916 9.46177 0.247916 8.53823 0.900879 8.29661L5.97566 6.41877C6.18095 6.34281 6.34281 6.18095 6.41877 5.97566L8.29661 0.90088Z" fill="#181818" />
@@ -112,24 +112,15 @@
                             <span>Tailored for You</span>
                         </div>
                     </div>
-                    <div class="col-12">
+                    <div class="col-sm-12">
                         <h1 class="title">Seamless</h1>
                         <h1 class="title title-color">Utility Management & Security services</h1>
                     </div>
-                    <div class="col-12">
-                        <p class="description">Our mission is to handle every aspect of essential service projects with unmatched professionalism, overseeing the entire process from start to finish to ensure a seamless experience for all.</p>
+                    <div class="col-sm-12">
+                        <p class="description">Global Security & Credit Agency Ltd, trading as GSC Agency, operate Nationwide, offering various services from Security, Utility Management, Waste Management, Legal Services, Debt Collection, & Vacant & Void Property Services, plus many more.</p>
                     </div>
-                    <div class="col-12">
+                    <div class="col-sm-12">
                         <div class="buttons">
-                            <a class="button active" href="booking.html">
-                                <svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M18 10.8334C18 15.926 16.3333 17.5 10.5 17.5C4.66667 17.5 3 15.926 3 10.4167C3 4.90745 4.66667 3.33337 10.5 3.33337C16.3333 3.33337 18 4.90745 18 10.8334Z" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                                    <path d="M13.8334 5L13.8334 2.5" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                                    <path d="M7.16663 5L7.16663 2.5" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                                    <line x1="7.08337" y1="8.41663" x2="13.9167" y2="8.41663" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                                </svg>
-                                <span>Book Security</span>
-                            </a>
                             <a class="button" id="security-services">
                                 <svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path d="M3.29406 7.45869C3.83698 5.14417 5.64417 3.33698 7.95869 2.79406C9.63021 2.40198 11.3698 2.40198 13.0413 2.79406C15.3558 3.33698 17.163 5.14417 17.7059 7.4587C18.098 9.13021 18.098 10.8698 17.7059 12.5413C17.163 14.8558 15.3558 16.663 13.0413 17.2059C11.3698 17.598 9.63021 17.598 7.9587 17.2059C5.64418 16.663 3.83698 14.8558 3.29406 12.5413C2.90198 10.8698 2.90198 9.13021 3.29406 7.45869Z" stroke="#181818" stroke-width="1.5" />
@@ -141,10 +132,50 @@
                     </div>
                 </div>
             </div>
-            <div class="bg-image" style="background-image: url(assets/images/header1.jpeg);"></div>
+            <div class="bg-image" style="background-image: url(assets/images/header1.jpeg);">
+                <div class="form form-homepage">
+                    <form id="submit-form" class="row" method="post">
+                        <h4>Get a Quote</h4>
+                        <div class="form-group col-md-6">
+                            <input id="form_name" type="text" name="name" class="form-control" placeholder="Name" required="required" data-error="Name is required.">
+                            <div id="error_name" class="help-block with-errors"></div>
+                        </div>
+                        <div class="form-group col-md-6">
+                            <input id="form_phone" type="phone" name="phone" class="form-control" placeholder="Phone" required="required" data-error="Phone is required.">
+                            <div id="error_phone" class="help-block with-errors"></div>
+                        </div>
+                        <div class="form-group col-md-12">
+                            <input id="form_email" type="email" name="email" class="form-control" placeholder="Email" required="required" data-error="Email is required.">
+                            <div id="error_email" class="help-block with-errors"></div>
+                        </div>
+                        <div class="form-group col-md-12">
+                            <select required class="form-control">
+                                <option value="" disabled selected hidden>Choose a service</option>
+                                <option value="1">Utility Management</option>
+                                <option value="2">Legal Services</option>
+                                <option value="3">Property Services</option>
+                                <option value="4">Security Services</option>
+                            </select>
+                        </div>
+                        <div class="form-group col-md-12 d-flex form-group-button">
+                            <div class="field-message">
+                                <textarea id="form_message" name="message" class="form-control rounded-4 h-auto" placeholder="Your Message" rows="4" required="required" data-error="Please, leave us a message."></textarea>
+                                <div id="error_message" class="help-block with-errors"></div>
+                            </div>
+                            <a class="button" type="button" id="button-quote">
+                                <svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M17.4885 4.18126C17.47 3.87651 17.3406 3.58908 17.1247 3.3732C16.9088 3.15731 16.6214 3.0279 16.3166 3.00938C15.3338 2.95079 12.8221 3.04063 10.7377 5.12423L10.3666 5.50001H5.80958C5.6448 5.49908 5.48148 5.53093 5.32911 5.59369C5.17675 5.65646 5.03839 5.7489 4.92208 5.86563L2.24239 8.54688C2.07806 8.71111 1.96274 8.91788 1.90939 9.144C1.85603 9.37012 1.86675 9.60664 1.94034 9.82701C2.01393 10.0474 2.14748 10.2429 2.326 10.3916C2.50452 10.5402 2.72095 10.6362 2.95099 10.6688L5.95646 11.0883L9.41036 14.5422L9.82989 17.5492C9.86216 17.7793 9.95812 17.9957 10.1069 18.1741C10.2558 18.3525 10.4515 18.4857 10.6721 18.5586C10.8005 18.6015 10.9351 18.6234 11.0705 18.6234C11.2345 18.6238 11.3969 18.5916 11.5485 18.5289C11.7 18.4661 11.8376 18.374 11.9533 18.2578L14.6346 15.5781C14.7513 15.4618 14.8438 15.3235 14.9065 15.1711C14.9693 15.0187 15.0011 14.8554 15.0002 14.6906V10.1336L15.3729 9.76095C17.4572 7.67657 17.5471 5.16485 17.4885 4.18126ZM5.80958 6.75001H9.11661L6.02833 9.83751L3.12521 9.43282L5.80958 6.75001ZM11.6229 6.01173C12.2234 5.40746 12.946 4.93829 13.7424 4.63557C14.5387 4.33284 15.3905 4.20353 16.2408 4.25626C16.2956 5.10702 16.1676 5.95966 15.8655 6.75686C15.5634 7.55405 15.0941 8.27735 14.4893 8.87813L10.0002 13.3656L7.13458 10.5L11.6229 6.01173ZM13.7502 14.6906L11.0682 17.375L10.6627 14.4711L13.7502 11.3836V14.6906ZM7.95646 15.4328C7.60489 16.2031 6.42911 18 3.12521 18C2.95945 18 2.80048 17.9342 2.68326 17.817C2.56605 17.6997 2.50021 17.5408 2.50021 17.375C2.50021 14.0711 4.29708 12.8953 5.06739 12.543C5.14208 12.5089 5.22275 12.4899 5.30479 12.487C5.38683 12.4841 5.46863 12.4974 5.54553 12.5262C5.62243 12.5549 5.69292 12.5985 5.75297 12.6544C5.81302 12.7104 5.86146 12.7777 5.89552 12.8524C5.92958 12.927 5.9486 13.0077 5.95148 13.0897C5.95437 13.1718 5.94107 13.2536 5.91234 13.3305C5.88361 13.4074 5.84002 13.4779 5.78405 13.5379C5.72808 13.598 5.66083 13.6464 5.58614 13.6805C5.0838 13.9094 3.97521 14.6461 3.77989 16.7203C5.85411 16.525 6.59239 15.4164 6.81974 14.9141C6.8538 14.8394 6.90224 14.7721 6.96229 14.7162C7.02234 14.6602 7.09283 14.6166 7.16973 14.5879C7.24663 14.5591 7.32843 14.5458 7.41047 14.5487C7.49251 14.5516 7.57317 14.5706 7.64786 14.6047C7.72255 14.6388 7.7898 14.6872 7.84577 14.7472C7.90174 14.8073 7.94533 14.8778 7.97406 14.9547C8.00279 15.0316 8.01609 15.1134 8.0132 15.1954C8.01032 15.2775 7.9913 15.3581 7.95724 15.4328H7.95646Z" fill="white" />
+                                </svg>
+                                <span>Submit Request <i class="loading"></i></span>
+                            </a>
+                        </div>
+                        <div id="result_message"></div>
+                    </form>
+                </div>
+            </div>
             <div class="container">
                 <div class="row">
-                    <div class="col-12 svg-icon">
+                    <div class="col-sm-12 svg-icon">
                         <svg width="245" height="245" viewBox="0 0 245 245" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <circle cx="121.712" cy="121.714" r="76.0702" fill="#181818" />
                             <path d="M145.393 143.302L152.189 139.39V114.104H118.197V120.879H145.387V143.302M131.789 134.439V151.132L138.591 147.22V127.665H111.395V107.329H138.591V100.555H104.599V134.439H131.789ZM97.7966 93.7746H145.387V107.329H152.184V87H91.0004V139.401L121.592 157L124.987 155.044V147.22L121.592 149.176L97.8025 135.483C97.8025 121.578 97.8025 107.674 97.8025 93.7688L97.7966 93.7746Z" fill="white" />
@@ -186,12 +217,15 @@
                             <path d="M92.8958 29.5962L90.791 20.9486L93.2201 20.3574L95.3249 29.005L92.8958 29.5962ZM94.8633 29.1173L94.3726 27.1012L99.0122 25.9719L99.5029 27.9881L94.8633 29.1173ZM94.0297 25.6923L93.5508 23.7247L97.741 22.7049L98.2199 24.6724L94.0297 25.6923ZM93.2493 22.4859L92.7586 20.4697L97.3253 19.3583L97.816 21.3744L93.2493 22.4859Z" fill="black" />
                         </svg>
                     </div>
-                    <div class="col-12 mt-6">
+                    <div class="col-sm-12">
+                        <p class="description">With over 30 years of experience within the industry, GSC Agency are at the forefront of all the sectors that we cover, no job is too small, & from overseas customers & clients, to clients within the UK, GSC Agency are without doubt, the company that cares.</p>
+                    </div>
+                    <div class="col-sm-12 mt-6">
                         <p class="text-title"> At the heart of GSC agency,</p>
                         <p class="text-title">is a <span>commitment to outstanding customer service.</span></p>
                         <p class="text-title">Our <span>friendly and professional team</span> is at your disposal, ready to address any concerns and provide <span>personalised solutions that align with your requirements.</span></p>
                     </div>
-                    <div class="col-12 mt-6">
+                    <div class="col-sm-12 mt-6">
                         <div class="buttons">
                             <a class="button" href="aboutus.html">
                                 <span>More About us</span>
@@ -202,10 +236,10 @@
             </div>
         </section>
 
-        <section class="overflow-hidden position-relative section-service-v2" id="section-security-services">
+        <section class="overflow-hidden position-relative section-service-v2 mt-6" id="section-security-services">
             <div class="container">
                 <div class="row">
-                    <div class="col-12">
+                    <div class="col-sm-12">
                         <div class="sub-header">
                             <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M8.29661 0.90088C8.53823 0.247916 9.46177 0.247916 9.70339 0.900879L11.5812 5.97566C11.6572 6.18095 11.819 6.34281 12.0243 6.41877L17.0991 8.29661C17.7521 8.53823 17.7521 9.46177 17.0991 9.70339L12.0243 11.5812C11.819 11.6572 11.6572 11.819 11.5812 12.0243L9.70339 17.0991C9.46177 17.7521 8.53823 17.7521 8.29661 17.0991L6.41877 12.0243C6.34281 11.819 6.18095 11.6572 5.97566 11.5812L0.90088 9.70339C0.247916 9.46177 0.247916 8.53823 0.900879 8.29661L5.97566 6.41877C6.18095 6.34281 6.34281 6.18095 6.41877 5.97566L8.29661 0.90088Z" fill="#181818" />
@@ -213,36 +247,36 @@
                             <span>Services</span>
                         </div>
                     </div>
-                    <div class="col-6">
+                    <div class="col-sm-6 mb-4">
                         <div class="item">
                             <img src="assets/images/service1.jpeg" />
                             <div class="item-sub-title">Utility</div>
                             <a class="item-title" href="services-utility.html">Utility Management</a>
-                            <p>With over 30 years of experience within the Utility & Security services as well as Debt Collection market, We provide a bespoke service to all Client’s requirements.</p>
+                            <p>Efficient utility management is essential for streamlined operations. At GSC, we provide expert solutions to optimise Gas, Electricity & Water, helping you reduce costs and enhance sustainability.</p>
                         </div>
                     </div>
-                    <div class="col-6">
+                    <div class="col-sm-6 mb-4">
                         <div class="item">
                             <img src="assets/images/service2.jpeg" />
                             <div class="item-sub-title">Utility</div>
                             <a class="item-title" href="services-legal.html">Legal Services</a>
-                            <p>Our Office-Based Staff and our Highly Trained Security Team provide a fully comprehensive service, ensuring that instructions received are completed to a professional and precise standard.</p>
+                            <p>GSC offers comprehensive legal support tailored to your needs, including pre- and post-legal solutions to safeguard your interests and ensure compliance. Click below for more details.</p>
                         </div>
                     </div>
-                    <div class="col-6">
+                    <div class="col-sm-6 mb-4">
                         <div class="item">
                             <img src="assets/images/service3.jpeg" />
                             <div class="item-sub-title">Utility</div>
                             <a class="item-title" href="services-property.html">Property Services</a>
-                            <p>With over 30 years of experience within the Utility & Security services as well as Debt Collection market, We provide a bespoke service to all Client’s requirements.</p>
+                            <p>At GSC, we offer a full range of property services, including vacant and void property management, maintenance, and security. Our solutions are designed to protect your assets and ensure their smooth operation.</p>
                         </div>
                     </div>
-                    <div class="col-6">
+                    <div class="col-sm-6 mb-4">
                         <div class="item">
                             <img src="assets/images/service4.jpeg" />
                             <div class="item-sub-title">Security</div>
                             <a class="item-title" href="services-security.html">Security</a>
-                            <p>Our Office-Based Staff and our Highly Trained Security Team provide a fully comprehensive service, ensuring that instructions received are completed to a professional and precise standard.</p>
+                            <p>GSC provides comprehensive security solutions to protect your assets, property, and personnel. From manned guarding to advanced security systems, we tailor our services to meet your specific needs. Click below for more details.</p>
                         </div>
                     </div>
                 </div>
@@ -252,7 +286,7 @@
         <section class="overflow-hidden position-relative section-faq">
             <div class="container">
                 <div class="row">
-                    <div class="col-12">
+                    <div class="col-sm-12">
                         <div class="sub-header">
                             <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M8.29661 0.90088C8.53823 0.247916 9.46177 0.247916 9.70339 0.900879L11.5812 5.97566C11.6572 6.18095 11.819 6.34281 12.0243 6.41877L17.0991 8.29661C17.7521 8.53823 17.7521 9.46177 17.0991 9.70339L12.0243 11.5812C11.819 11.6572 11.6572 11.819 11.5812 12.0243L9.70339 17.0991C9.46177 17.7521 8.53823 17.7521 8.29661 17.0991L6.41877 12.0243C6.34281 11.819 6.18095 11.6572 5.97566 11.5812L0.90088 9.70339C0.247916 9.46177 0.247916 8.53823 0.900879 8.29661L5.97566 6.41877C6.18095 6.34281 6.34281 6.18095 6.41877 5.97566L8.29661 0.90088Z" fill="#181818" />
@@ -260,7 +294,7 @@
                             <span>FAQ</span>
                         </div>
                     </div>
-                    <div class="col-12">
+                    <div class="col-sm-12">
                         <div class="faq-header">
                             <h2>Frequently Asked <span>Questions</span></h2>
                             <div>
@@ -288,14 +322,14 @@
                                 <div class="accordion-item card">
                                     <div class="accordion-header card-header" id="headingOne">
                                         <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
-                                            Who are we
+                                            Who are we?
                                         </button>
                                     </div>
 
                                     <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne">
                                         <div class="card-body">
                                             <p>
-                                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien fringilla, mattis ligula consectetur, ultrices mauris.
+                                                Global Security & Credit Agency Ltd, trading as GSC Agency, are based Nationwide, offering various services from Utility management, Security, Legal Services, Property Services and Waste Management.  With over 30 years of experience within the industry, GSC Agency are at the forefront of all the sectors that we cover, no job is too small, & from overseas customers & clients, to clients within the UK, GSC Agency are without doubt, the company that cares. Established with a mission to deliver excellence, we bring a wealth of experience and professionalism to meet the diverse needs of our clients.
                                             </p>
                                         </div>
                                     </div>
@@ -309,22 +343,92 @@
                                     <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo">
                                         <div class="card-body">
                                             <p>
-                                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien fringilla, mattis ligula consectetur, ultrices mauris.
+                                                At GSC Agency, we offer a comprehensive range of security services designed to meet the diverse needs of our clients
                                             </p>
+                                            <p>Our services include:</p>
+                                            <ul>
+                                                <li>Door Supervisors</li>
+                                                <li>CCTV </li>
+                                                <li>K9 Support</li>
+                                                <li>Dog Security</li>
+                                                <li>Event Security</li>
+                                                <li>Close Protection </li>
+                                                <li>Mobile Patrols</li>
+                                                <li>Concierge Security</li>
+                                                <li>Fire Marshal</li>
+                                                <li>Key Holding </li>
+                                                <li>Corporate Office Security</li>
+                                                <li>Hotel Security</li>
+                                                <li>Industrial & Warehouse Security</li>
+                                                <li>Retail Security</li>
+                                            </ul>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="accordion-item card">
                                     <div class="accordion-header card-header" id="headingThree">
                                         <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                                            What level of support do you provide?
+                                            What level of support do we provide?
                                         </button>
                                     </div>
-                                    <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="collapseThree">
+                                    <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree">
                                         <div class="card-body">
                                             <p>
-                                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien fringilla, mattis ligula consectetur, ultrices mauris.
+                                                At GSC Agency, we offer a high level of support across our core services: Utility Management, Security, Legal Services, Property Services, and Waste Management. Our approach ensures tailored, reliable, and efficient solutions designed to meet your specific needs. Here’s what sets us apart:
                                             </p>
+                                            <ul>
+                                                <li style="list-style: none;">
+                                                    <p style="margin: 0;">1. Comprehensive, Tailored Solutions</p>
+                                                    <p style="margin-left: 3px;">We deliver end-to-end services customised to address your challenges, ensuring seamless integration and successful outcomes across all our offerings</p>
+                                                </li>
+                                                <li style="list-style: none;">
+                                                    <p style="margin: 0;">2. Nationwide Reach</p>
+                                                    <p style="margin-left: 3px;">Our services extend across the country, enabling consistent and reliable support wherever your business operates.</p>
+                                                </li>
+                                                <li style="list-style: none;">
+                                                    <p style="margin: 0;">3. Skilled Professionals</p>
+                                                    <p style="margin-left: 3px;">Our teams are highly trained to manage complex and sensitive tasks in utility management, property services, waste management, security, and legal matters with professionalism and efficiency.</p>
+                                                </li>
+                                                <li style="list-style: none;">
+                                                    <p style="margin: 0;">4. 24/7 Availability</p>
+                                                    <p style="margin-left: 3px;">We understand the importance of continuous support. Our team is available around the clock to address urgent needs and ensure uninterrupted service.</p>
+                                                </li>
+                                                <li style="list-style: none;">
+                                                    <p style="margin: 0;">5. Dedicated Support Team</p>
+                                                    <p style="margin-left: 3px;">From office staff to on-the-ground specialists, our team works collaboratively to provide proactive solutions, regular updates, and timely communication.</p>
+                                                </li>
+                                                <li style="list-style: none;">
+                                                    <p style="margin: 0;">6. Commitment to Excellence</p>
+                                                    <p style="margin-left: 3px;">With years of industry experience, we are dedicated to delivering reliable, results-driven support, building long-term success and trust with every client.</p>
+                                                </li>
+                                            </ul>
+                                            <p>At GSC Agency, our commitment to professionalism, flexibility, and exceptional service ensures that we not only meet your expectations but exceed them, every step of the way.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item card">
+                                    <div class="accordion-header card-header" id="headingFour">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                            What utility services we offer?
+                                        </button>
+                                    </div>
+                                    <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="collapseFour" data-bs-parent="#accordionExample">
+                                        <div class="card-body">
+                                            <p>
+                                                At GSC, we offer the following utility services:
+                                            </p>
+                                            <ul>
+                                                <li>Door Supervisors</li>
+                                                <li>Meter Removal </li>
+                                                <li>Meter Installation </li>
+                                                <li>Meter Readings </li>
+                                                <li>Site Investigation </li>
+                                                <li>Revenue Protection </li>
+                                                <li>Vacant update info</li>
+                                                <li>Void update info </li>
+                                                <li>Change of Tenancy accounts </li>
+                                            </ul>
+                                            <p>Our expert team ensures each service is delivered with precision, helping you manage your utilities efficiently.</p>
                                         </div>
                                     </div>
                                 </div>
@@ -337,45 +441,53 @@
                         <div class="faq-content">
                             <div class="accordion" id="accordionExampleRight">
                                 <div class="accordion-item card">
-                                    <div class="accordion-header card-header" id="headingFour">
-                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-                                            What utility services we offer?
+                                    <div class="accordion-header card-header" id="headingFive">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="true" aria-controls="collapseFive">
+                                            What legal services do we offer?
                                         </button>
                                     </div>
-                                    <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="collapseFour" data-bs-parent="#accordionExample">
+                                    <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive">
                                         <div class="card-body">
                                             <p>
-                                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien fringilla, mattis ligula consectetur.
+                                                At GSC, we provide a full range of legal services, including:
                                             </p>
+                                            <ul>
+                                                <li>Process Serving</li>
+                                                <li>Pre-Litigation Support</li>
+                                                <li>Asset Tracing</li>
+                                                <li>Tracing Services</li>
+                                                <li>Debt Collection and Credit Management</li>
+                                            </ul>
+                                            <p>Our team is dedicated to ensuring effective legal solutions, helping you navigate through complex matters with efficiency and expertise.</p>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="accordion-item card">
-                                    <div class="accordion-header card-header" id="headingOne_1">
-                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne_1" aria-expanded="true" aria-controls="collapseOne_1">
-                                            What legal services we offer?
+                                    <div class="accordion-header card-header" id="headingSix">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="true" aria-controls="collapseSix">
+                                            What Waste Management services we offer?
                                         </button>
                                     </div>
-
-                                    <div id="collapseOne_1" class="accordion-collapse collapse" aria-labelledby="headingOne_1">
+                                    <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix">
                                         <div class="card-body">
                                             <p>
-                                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien fringilla, mattis ligula consectetur.
+                                                GSC Agency, are registered with the Environmental Agency, providing waste management, nationwide
                                             </p>
+                                            <p>We service all your needs, whether its safely clearing a newly vacant property or removing rubbish following a fly-tipping, we are there. </p>
+                                            <p>Our expert waste management team, aim at clearing all unwanted waste, within 24-48hrs, of receiving official instructions, & we pride ourselves on this service, but we also offer a bespoke service to all our clients if preferred.</p>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="accordion-item card">
-                                    <div class="accordion-header card-header" id="headingTwo_1">
-                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo_1" aria-expanded="false" aria-controls="collapseTwo_1">
+                                    <div class="accordion-header card-header" id="headingSeven">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSeven" aria-expanded="true" aria-controls="collapseSeven">
                                             How is data privacy handled?
                                         </button>
                                     </div>
-                                    <div id="collapseTwo_1" class="accordion-collapse collapse" aria-labelledby="headingTwo_1">
+                                    <div id="collapseSeven" class="accordion-collapse collapse" aria-labelledby="headingSeven">
                                         <div class="card-body">
-                                            <p>
-                                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien fringilla, mattis ligula consectetur.
-                                            </p>
+                                            <p>At GSC, we take data privacy seriously and are committed to protecting the personal and sensitive information of our clients, partners, and employees. We comply with all relevant data protection laws and regulations to ensure your data is handled securely. Our team follows strict protocols to safeguard your information, ensuring it is stored, processed, and shared only when necessary and with your consent. We continuously review and update our security measures to provide the highest level of protection for your data. Your privacy is our priority.</p>
+                                            <p>For more information on data privacy regulations, please visit Data protection: The Data Protection Act - <a href="GOV.UK">GOV.UK</a></p>
                                         </div>
                                     </div>
                                 </div>
@@ -390,7 +502,7 @@
         <section class="overflow-hidden position-relative section-latest-news">
             <div class="container">
                 <div class="row">
-                    <div class="col-12">
+                    <div class="col-sm-12">
                         <div class="news-header">
                             <h2><span>Latest News from</span> GSC Agency</h2>
                             <div class="sub-header">
@@ -403,7 +515,7 @@
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-4">
+                    <div class="col-sm-4">
                         <div class="item">
                             <img src="assets/images/news1.jpeg" />
                             <a class="item-title" href="news-detail.html">Llama 3</a>
@@ -411,7 +523,7 @@
                             <p>Llama 3 is a collection of pretrained and fine-tuned generative text models ranging in scale from 8 billion to 70 billion parameters.</p>
                         </div>
                     </div>
-                    <div class="col-4">
+                    <div class="col-sm-4">
                         <div class="item">
                             <img src="assets/images/news2.jpeg" />
                             <a class="item-title" href="news-detail.html">DLSAT</a>
@@ -419,7 +531,7 @@
                             <p>A powerful deep learning model for accurate image segmentation and robust object tracking.</p>
                         </div>
                     </div>
-                    <div class="col-4">
+                    <div class="col-sm-4">
                         <div class="item">
                             <img src="assets/images/news3.jpeg" />
                             <a class="item-title" href="news-detail.html">Videoflow</a>
@@ -429,7 +541,7 @@
                     </div>
                 </div>
                 <div class="row mt-6">
-                    <div class="col-12">
+                    <div class="col-sm-12">
                         <div class="buttons">
                             <a class="button active" href="news.html">
                                 <span>See all the news</span>
@@ -443,7 +555,7 @@
         <section class="overflow-hidden position-relative section-footer-v2">
             <div class="container">
                 <div class="row">
-                    <div class="col-12">
+                    <div class="col-sm-12">
                         <div class="footer">
                             <div class="logo-header">
                                 <div class="logo">
@@ -458,23 +570,9 @@
                             </div>
                             <ul class="footer-menu">
                                 <li class="nav-item">
-                                    <a class="nav-link">
-                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <g clip-path="url(#clip0_456_24)">
-                                                <mask id="mask0_456_24" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="0" y="0" width="24" height="24">
-                                                    <path d="M24 0H0V24H24V0Z" fill="white" />
-                                                </mask>
-                                                <g mask="url(#mask0_456_24)">
-                                                    <path d="M16.683 4.6875H19.164L13.7438 10.8825L20.1203 19.3125H15.1275L11.217 14.1998L6.74253 19.3125H4.26005L10.0575 12.6863L3.94055 4.6875H9.06003L12.5948 9.36075L16.683 4.6875ZM15.8123 17.8275H17.187L8.31303 6.0945H6.83778L15.8123 17.8275Z" fill="white" />
-                                                </g>
-                                            </g>
-                                            <defs>
-                                                <clipPath id="clip0_456_24">
-                                                    <rect width="24" height="24" fill="white" />
-                                                </clipPath>
-                                            </defs>
-                                        </svg>
-                                        <span>Twitter</span>
+                                    <a class="nav-link" href="https://www.tiktok.com/@gsc.agency" target="_blank">
+                                        <img src="assets/images/tiktok.png" />
+                                        <span>Tiktok</span>
                                     </a>
                                 </li>
                                 <li class="nav-item">
@@ -513,7 +611,7 @@
                     </div>
                 </div>
                 <div class="row mt-10">
-                    <div class="col-12">
+                    <div class="col-sm-12">
                         <div class="subscribe">
                             <div>
                                 <h4>Subscribe to our newsletter for updates:</h4>
@@ -527,10 +625,10 @@
                     </div>
                 </div>
                 <div class="row mt-10 mb-6 links">
-                    <div class="col-6">
+                    <div class="col-sm-6">
                         © 2024 Copyright Global Security Credit Agency Limited
                     </div>
-                    <div class="col-6">
+                    <div class="col-sm-6">
                         <ul>
                             <li><a href="cookie.html">Privacy Policy</a></li>
                             <li><a href="term.html">Terms and condition</a></li>
@@ -564,8 +662,9 @@
 
     <!-- Below is the link that users can use to open Preferences Center to change their preferences. Do not modify the ID parameter. Place it where appropriate, style it as needed. -->
 
-    <a href="#" id="open_preferences_center">Update cookies preferences</a>
-
+    <a href="#" id="open_preferences_center">Cookies preferences</a>
+    <script src="https://static.elfsight.com/platform/platform.js" async></script>
+    <div class="elfsight-app-9c6af1f2-93bd-4cf2-8b84-36f3dea974b1" data-elfsight-app-lazy></div>
 </body>
 
 </html>

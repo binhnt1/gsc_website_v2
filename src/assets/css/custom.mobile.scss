@@ -57,6 +57,8 @@
 
                 .dropdown-menu {
                     width: 250px;
+                    position: relative;
+                    display: block !important;
                 }
             }
         }
@@ -148,6 +150,7 @@
         .container {
             background: #F7F8F8;
         }
+
         .our-services {
             margin-top: 30px;
         }
@@ -157,46 +160,52 @@
         .container {
             padding-left: 15px;
             padding-right: 15px;
+
             ul.numbers {
                 margin: 0;
                 padding: 0;
                 width: 100%;
                 margin-bottom: 30px;
             }
+
             .submit-form {
                 padding-left: 0;
                 padding-right: 0;
             }
-        }        
+        }
     }
 
-    .section-join-us{
+    .section-join-us {
         .container {
             padding-left: 15px;
             padding-right: 15px;
-        }        
+        }
     }
 
     .section-discover {
         .container {
             padding-left: 15px;
             padding-right: 15px;
+
             .row {
                 gap: 20px;
                 flex-direction: column;
+
                 .col-3,
                 .col-6 {
                     width: 100%;
+
                     p {
                         max-width: unset;
                     }
                 }
+
                 .text-right {
                     padding-left: 15px;
-                    padding-right: 15px;                    
+                    padding-right: 15px;
                 }
             }
-        }                
+        }
     }
 
     .section-service {
@@ -209,7 +218,7 @@
                     width: 100%;
                     margin-top: 0;
 
-                    p {    
+                    p {
                         &.large-lead {
                             margin-top: 0 !important;
                         }
@@ -222,6 +231,7 @@
             .info {
                 .inner {
                     width: 100% !important;
+
                     svg {
                         top: -20px;
                         width: 180px;
@@ -230,15 +240,18 @@
                 }
             }
         }
+
         ul {
             margin: 0;
             padding: 0;
+
             li {
                 width: 100%;
                 max-width: unset;
                 min-height: unset;
             }
         }
+
         .image {
             img {
                 min-height: unset;
@@ -261,6 +274,91 @@
 
             .rounded-4 {
                 padding: 20px !important;
+            }
+        }
+    }
+
+    .section-footer-v2 {
+        .container {
+            max-width: 100%;
+
+            .links {
+                ul {
+                    gap: 5px;
+                    flex-wrap: wrap;
+                    justify-content: space-between;
+                    li {
+                        list-style: none;
+                    }
+                }
+            }
+
+            .footer {
+                flex-direction: column;
+
+                .logo-header {
+                    width: 100%;
+                }
+
+                .footer-menu {
+                    flex-wrap: wrap;
+                    justify-content: center;
+                }
+            }
+
+            .subscribe {
+                padding: 40px 20px;
+                .input {
+                    input {
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+
+    .section-booking {
+        .container {
+            max-width: 100%;
+
+            .subscribe {
+                padding-left: 10px;
+                padding-right: 10px;
+            }
+
+            .box-contact {
+                max-width: 100%;
+            }
+        }
+    }
+
+    .page-wrapper .site-header.sticky {
+        z-index: 10;
+
+        #header-wrap {
+            .navbar-collapse {
+                top: 60px;
+                width: 100%;
+                border: none;
+                position: fixed;
+                max-height: none;
+                overflow: hidden;
+                background-color: rgb(255, 255, 255);
+
+                &.show {
+                    box-shadow: 0 0.5rem 1rem rgba(110, 0, 255, .15) !important;
+                }
+
+                .navbar-nav {
+                    width: 100%;
+                    border: none;
+                    overflow: hidden;
+
+                    li {
+                        width: 100%;
+                        height: auto;
+                    }
+                }
             }
         }
     }

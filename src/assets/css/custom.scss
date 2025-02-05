@@ -1854,7 +1854,6 @@ $greyishBrown: #404040;
         font-size: 32px;
         font-weight: 500;
         color: #181818;
-        max-width: 1000px;
         line-height: 44px;
         text-align: center;
 
@@ -2096,7 +2095,6 @@ $greyishBrown: #404040;
         font-size: 32px;
         font-weight: 500;
         color: #181818;
-        max-width: 1000px;
         line-height: 44px;
         text-align: center;
 
@@ -3057,22 +3055,28 @@ div.eapps-widget {
 }
 
 #open_preferences_center {
+    width: 60px;
+    height: 60px;
     display: block;
     position: fixed;
-    bottom: 10px;
-    left: 10px;
-    border-radius: 10px;
-    padding: 10px 20px;
+    bottom: 20px;
+    left: 20px;
+    padding: 0;
     color: #fff;
     z-index: 10;
-    border: 1px solid #ccc;
-    background-color: #000;
+    background-color: rgb(75,174,79);
     text-align: center;
     overflow: hidden;
     white-space: nowrap;
+    border-radius: 10px;
 
     &:hover {
-        width: fit-content;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4);
+    }
+
+    svg {
+        width: 100%;
+        height: 100%;
     }
 }
 
@@ -3090,9 +3094,8 @@ div.eapps-widget {
 }
 
 .whatsapp-button {
-    width: 56px;
-    height: 56px;
-    background-color: #25D366;
+    width: 60px;
+    height: 60px;
     border-radius: 50%;
     display: flex;
     align-items: center;
@@ -3101,10 +3104,12 @@ div.eapps-widget {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     border: none;
     transition: background-color 0.2s;
+    background-color: #25D366;
 }
 
 .whatsapp-button:hover {
-    background-color: #1ea952;
+    background-color: #25D366;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4);
 }
 
 .chat-popup {

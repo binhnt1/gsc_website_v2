@@ -101,19 +101,15 @@
             </div>
         </header>
 
-        <section class="overflow-hidden position-relative section-header">
+        <section class="overflow-hidden position-relative section-header" style="padding-bottom: 0;">
             <div class="container">
                 <div class="row">
                     <div class="col-sm-12">
-                        <div class="sub-header">
-                            <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M8.29661 0.90088C8.53823 0.247916 9.46177 0.247916 9.70339 0.900879L11.5812 5.97566C11.6572 6.18095 11.819 6.34281 12.0243 6.41877L17.0991 8.29661C17.7521 8.53823 17.7521 9.46177 17.0991 9.70339L12.0243 11.5812C11.819 11.6572 11.6572 11.819 11.5812 12.0243L9.70339 17.0991C9.46177 17.7521 8.53823 17.7521 8.29661 17.0991L6.41877 12.0243C6.34281 11.819 6.18095 11.6572 5.97566 11.5812L0.90088 9.70339C0.247916 9.46177 0.247916 8.53823 0.900879 8.29661L5.97566 6.41877C6.18095 6.34281 6.34281 6.18095 6.41877 5.97566L8.29661 0.90088Z" fill="#181818" />
-                            </svg>
-                            <span>Security Guards</span>
+                        <div class="sub-header sub-header-contactus">
+                            <h1 class="title">Security Guard</h1>
                         </div>
-                    </div>
-                    <div class="col-sm-12 mt-6">
-                        <h2 class="sub-title">Please fill in all categories to the best of your abilities:</h2>
+                        <h6 style="text-align: center;">Application</h6>
+                        <p class="description">Please complete the form below as part as your application process</p>
                     </div>
                 </div>
             </div>
@@ -121,18 +117,21 @@
 
         <section class="overflow-hidden position-relative section-service section-contactus">
             <div class="container">
-                <div class="row row-contact">
+                <div class="row row-contact active">
+                    <div class="form-group col-md-12">
+                        <div class="line">
+                            <div class="line1"></div>
+                        </div>
+                    </div>
                     <div class="col-sm-12 form">
-                        <form id="submit-form" class="row" method="post">
-                            <div class="form-group col-md-12">
-                                <label>Type of Security badge attained</label>
-                                <input id="type_of_security_badge_attained" type="text" name="type_of_security_badge_attained" class="form-control" placeholder="Type of Security badge attained">
-                                <div id="error_type_of_security_badge_attained" class="help-block with-errors"></div>
+                        <form id="submit-form" class="row">
+                            <div class="form-group col-md-12 mt-6">
+                                <h6>Personal Information</h6>
                             </div>
-                            <div class="form-group col-md-12">
-                                <label>SIA License number(s)</label>
-                                <input id="sia_license_number" type="text" name="sia_license_number" class="form-control" placeholder="SIA License number(s)">
-                                <div id="error_sia_license_number" class="help-block with-errors"></div>
+                            <div class="form-group col-md-12 mt-6">
+                                <label>Title</label>
+                                <input id="type_of_security_badge_attained" type="text" name="type_of_security_badge_attained" class="form-control" placeholder="Title">
+                                <div id="error_type_of_security_badge_attained" class="help-block with-errors"></div>
                             </div>
                             <div class="form-group col-md-12">
                                 <label>First name</label>
@@ -140,18 +139,18 @@
                                 <div id="error_first_name" class="help-block with-errors"></div>
                             </div>
                             <div class="form-group col-md-12">
-                                <label>Middle name (if applicable)</label>
-                                <input id="middle_name" type="text" name="middle_name" class="form-control" placeholder="Middle name (if applicable)">
+                                <label>Middle name</label>
+                                <input id="middle_name" type="text" name="middle_name" class="form-control" placeholder="Middle name">
                                 <div id="error_middle_name" class="help-block with-errors"></div>
                             </div>
                             <div class="form-group col-md-12">
-                                <label>Telephone No (Business)</label>
-                                <input id="telephone_business" type="text" name="telephone_business" class="form-control" placeholder="Telephone No (Business)">
+                                <label>Surname</label>
+                                <input id="telephone_business" type="text" name="telephone_business" class="form-control" placeholder="Surname">
                                 <div id="error_telephone_business" class="help-block with-errors"></div>
                             </div>
                             <div class="form-group col-md-12">
-                                <label>Telephone No (Mobile)</label>
-                                <input id="telephone_mobile" type="text" name="telephone_mobile" class="form-control" placeholder="Telephone No (Mobile)">
+                                <label>Date of Birth</label>
+                                <input id="telephone_mobile" type="text" name="telephone_mobile" class="form-control" placeholder="Date of Birth">
                                 <div id="error_telephone_mobile" class="help-block with-errors"></div>
                             </div>
                             <div class="form-group col-md-12">
@@ -160,9 +159,14 @@
                                 <div id="error_email_address" class="help-block with-errors"></div>
                             </div>
                             <div class="form-group col-md-12">
-                                <label>Present Address</label>
-                                <input id="present_address" type="text" name="present_address" class="form-control" placeholder="Present Address">
+                                <label>Mobile number</label>
+                                <input id="present_address" type="text" name="present_address" class="form-control" placeholder="Mobile number">
                                 <div id="error_present_address" class="help-block with-errors"></div>
+                            </div>
+                            <div class="form-group col-md-12">
+                                <label>Address line</label>
+                                <input id="national_insurance_number" type="text" name="national_insurance_number" class="form-control" placeholder="Address line">
+                                <div id="error_national_insurance_number" class="help-block with-errors"></div>
                             </div>
                             <div class="form-group col-md-12">
                                 <label>City</label>
@@ -170,8 +174,13 @@
                                 <div id="error_city" class="help-block with-errors"></div>
                             </div>
                             <div class="form-group col-md-12">
-                                <label>Post code</label>
+                                <label>Postcode</label>
                                 <input id="post_code" type="text" name="post_code" class="form-control" placeholder="Post code">
+                                <div id="error_post_code" class="help-block with-errors"></div>
+                            </div>
+                            <div class="form-group col-md-12">
+                                <label>Gender</label>
+                                <input id="post_code" type="text" name="post_code" class="form-control" placeholder="Gender">
                                 <div id="error_post_code" class="help-block with-errors"></div>
                             </div>
                             <div class="form-group col-md-12">
@@ -179,271 +188,253 @@
                                 <input id="nationality" type="text" name="nationality" class="form-control" placeholder="Nationality">
                                 <div id="error_nationality" class="help-block with-errors"></div>
                             </div>
-                            <div class="form-group col-md-12">
-                                <label>National Insurance number</label>
-                                <input id="national_insurance_number" type="text" name="national_insurance_number" class="form-control" placeholder="National Insurance number">
-                                <div id="error_national_insurance_number" class="help-block with-errors"></div>
+                            <div class="form-group col-md-12 form-group-buttons">
+                                <button style="opacity: 0;">&nbsp;</button>
+                                <button id="buttonNext1">Next</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="row row-contact">
+                    <div class="form-group col-md-12">
+                        <div class="line">
+                            <div class="line2"></div>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 form">
+                        <form id="submit-form" class="row">
+                            <div class="form-group col-md-12 mt-6">
+                                <h6>Security Information</h6>
+                            </div>
+                            <div class="form-group col-md-12 mt-6">
+                                <label>Type of security badge attained</label>
+                                <input id="type_of_security_badge_attained" type="text" name="type_of_security_badge_attained" class="form-control" placeholder="Title">
+                                <div id="error_type_of_security_badge_attained" class="help-block with-errors"></div>
                             </div>
                             <div class="form-group col-md-12">
-                                <label>Do you need a work permit to be employed in the UK If you already have a work permit, when does it expire?</label>
-                                <input id="need_a_work" type="text" name="need_a_work" class="form-control" placeholder="Do you need a work">
-                                <div id="error_need_a_work" class="help-block with-errors"></div>
+                                <label>Please enter your valid SIA Licence No. If you do not please indicate with n/a</label>
+                                <input id="first_name" type="text" name="first_name" class="form-control" placeholder="First name">
+                                <div id="error_first_name" class="help-block with-errors"></div>
                             </div>
                             <div class="form-group col-md-12">
-                                <label>Do you have a UK driving license</label>
-                                <input id="have_uk_driving_license" type="text" name="have_uk_driving_license" class="form-control" placeholder="Do you have a UK driving license">
-                                <div id="error_have_uk_driving_license" class="help-block with-errors"></div>
+                                <label>Please enter your UTR No. If you do not please indicate with n/a</label>
+                                <input id="middle_name" type="text" name="middle_name" class="form-control" placeholder="Middle name">
+                                <div id="error_middle_name" class="help-block with-errors"></div>
                             </div>
                             <div class="form-group col-md-12">
-                                <label>Please upload your driving license if attained</label>
-                                <input id="driving_license_upload" type="file" name="driving_license_upload" class="form-control" placeholder="Document upload">
-                                <div id="error_driving_license_upload" class="help-block with-errors"></div>
-                            </div>
-                            <div class="form-group col-md-12">
-                                <label>Passport number</label>
-                                <input id="passport_number" type="text" name="passport_number" class="form-control" placeholder="Passport number">
-                                <div id="error_passport_number" class="help-block with-errors"></div>
-                            </div>
-                            <div class="form-group col-md-12">
-                                <label>Share code (If applicable) AND VALID UNTIL DATE</label>
-                                <input id="share_code" type="text" name="share_code" class="form-control" placeholder="Share code">
-                                <div id="error_share_code" class="help-block with-errors"></div>
-                            </div>
-                            <div class="form-group col-md-12">
-                                <label>Account Holder</label>
-                                <input id="account_holder" type="text" name="account_holder" class="form-control" placeholder="Account Holder">
-                                <div id="error_account_holder" class="help-block with-errors"></div>
-                            </div>
-                            <div class="form-group col-md-12">
-                                <label>Bank Name</label>
-                                <input id="bank_name" type="text" name="bank_name" class="form-control" placeholder="Bank Name">
-                                <div id="error_bank_name" class="help-block with-errors"></div>
-                            </div>
-                            <div class="form-group col-md-12">
-                                <label>Bank address</label>
-                                <input id="bank_address" type="text" name="bank_address" class="form-control" placeholder="Bank address">
-                                <div id="error_bank_address" class="help-block with-errors"></div>
-                            </div>
-                            <div class="form-group col-md-12">
-                                <label>Sort code</label>
-                                <input id="sort_code" type="text" name="sort_code" class="form-control" placeholder="Sort code">
-                                <div id="error_sort_code" class="help-block with-errors"></div>
-                            </div>
-                            <div class="form-group col-md-12">
-                                <label>Account number</label>
-                                <input id="account_number" type="text" name="account_number" class="form-control" placeholder="Account number">
-                                <div id="error_account_number" class="help-block with-errors"></div>
-                            </div>
-                            <div class="form-group col-md-12">
-                                <label>Education</label>
-                                <div>Other relevant Educational/Qualifications/Training Courses/Certificates, with Dates e.g. First Aid, Fire Training, Close protection, SITO, NOCN, etc. Any Relevant Experience (In Security)</div>
-                                <input id="education" type="text" name="education" class="form-control" placeholder="Education">
-                                <div id="error_education" class="help-block with-errors"></div>
-                            </div>
-                            <h6>Previous Employment / Unemployment (If applicable)</h6>
-                            <div class="form-group col-md-12">
-                                <label>Name & Full Address of Employers</label>
-                                <input id="employer_name_address" type="text" name="employer_name_address" class="form-control" placeholder="Name & Full Address of Employers">
-                                <div id="error_employer_name_address" class="help-block with-errors"></div>
-                            </div>
-                            <div class="form-group col-md-12">
-                                <label>Position Held</label>
-                                <input id="position_held" type="text" name="position_held" class="form-control" placeholder="Position Held">
-                                <div id="error_position_held" class="help-block with-errors"></div>
-                            </div>
-                            <div class="form-group col-md-12">
-                                <label>Reason for leaving (if left)</label>
-                                <input id="reason_for_leaving" type="text" name="reason_for_leaving" class="form-control" placeholder="Reason for leaving (if left)">
-                                <div id="error_reason_for_leaving" class="help-block with-errors"></div>
-                            </div>
-                            <div class="form-group col-md-12">
-                                <label>Final Salary</label>
-                                <input id="final_salary" type="text" name="final_salary" class="form-control" placeholder="Final Salary">
-                                <div id="error_final_salary" class="help-block with-errors"></div>
-                            </div>
-                            <div class="form-group col-md-12">
-                                <label>Description of Duties/Role(s)</label>
-                                <input id="duties_roles" type="text" name="duties_roles" class="form-control" placeholder="Description of Duties/Role(s)">
-                                <div id="error_duties_roles" class="help-block with-errors"></div>
-                            </div>
-                            <div class="form-group col-md-12">
-                                <label>Date started and left</label>
-                                <input id="date_started_left" type="text" name="date_started_left" class="form-control" placeholder="Date started and left">
-                                <div id="error_date_started_left" class="help-block with-errors"></div>
-                            </div>
-                            <h6>Previous Employment / Unemployment (If applicable)</h6>
-                            <div class="form-group col-md-12">
-                                <label>Name & Full Address of Employers</label>
-                                <input id="employer_name_address_2" type="text" name="employer_name_address_2" class="form-control" placeholder="Name & Full Address of Employers">
-                                <div id="error_employer_name_address_2" class="help-block with-errors"></div>
-                            </div>
-                            <div class="form-group col-md-12">
-                                <label>Position Held</label>
-                                <input id="position_held_2" type="text" name="position_held_2" class="form-control" placeholder="Position Held">
-                                <div id="error_position_held_2" class="help-block with-errors"></div>
-                            </div>
-                            <div class="form-group col-md-12">
-                                <label>Reason for leaving (if left)</label>
-                                <input id="reason_for_leaving_2" type="text" name="reason_for_leaving_2" class="form-control" placeholder="Reason for leaving (if left)">
-                                <div id="error_reason_for_leaving_2" class="help-block with-errors"></div>
-                            </div>
-                            <div class="form-group col-md-12">
-                                <label>Final Salary</label>
-                                <input id="final_salary_2" type="text" name="final_salary_2" class="form-control" placeholder="Final Salary">
-                                <div id="error_final_salary_2" class="help-block with-errors"></div>
-                            </div>
-                            <div class="form-group col-md-12">
-                                <label>Description of Duties/Role(s)</label>
-                                <input id="duties_roles_2" type="text" name="duties_roles_2" class="form-control" placeholder="Description of Duties/Role(s)">
-                                <div id="error_duties_roles_2" class="help-block with-errors"></div>
-                            </div>
-                            <div class="form-group col-md-12">
-                                <label>Date started and left</label>
-                                <input id="date_started_left_2" type="text" name="date_started_left_2" class="form-control" placeholder="Date started and left">
-                                <div id="error_date_started_left_2" class="help-block with-errors"></div>
-                            </div>
-                            <div class="form-group col-md-12">
-                                <label>Title of Referee</label>
-                                <input id="title_of_referee" type="text" name="title_of_referee" class="form-control" placeholder="Title of Referee">
-                                <div id="error_title_of_referee" class="help-block with-errors"></div>
-                            </div>
-                            <h6>DECLARATION - THESE MUST BE PEOPLE YOU HAVE KNOWN FOR AT LEAST THE PAST 3 YEARS. THEY CANNOT BE A CLOSE RELATIVE OR A PARTNER</h6>
-                            <h6>REFEREE 1</h6>
-                            <div class="form-group col-md-12">
-                                <label>Full Name</label>
-                                <input id="full_name" type="text" name="full_name" class="form-control" placeholder="Full Name">
-                                <div id="error_full_name" class="help-block with-errors"></div>
-                            </div>
-                            <div class="form-group col-md-12">
-                                <label>Job Title</label>
-                                <input id="job_title" type="text" name="job_title" class="form-control" placeholder="Job Title">
-                                <div id="error_job_title" class="help-block with-errors"></div>
-                            </div>
-                            <div class="form-group col-md-12">
-                                <label>Date known from</label>
-                                <input id="date_known_from" type="text" name="date_known_from" class="form-control" placeholder="Date known from">
-                                <div id="error_date_known_from" class="help-block with-errors"></div>
-                            </div>
-                            <div class="form-group col-md-12">
-                                <label>Full address</label>
-                                <input id="full_address" type="text" name="full_address" class="form-control" placeholder="Full address">
-                                <div id="error_full_address" class="help-block with-errors"></div>
-                            </div>
-                            <div class="form-group col-md-12">
-                                <label>Telephone no</label>
-                                <input id="telephone_no" type="text" name="telephone_no" class="form-control" placeholder="Telephone no">
-                                <div id="error_telephone_no" class="help-block with-errors"></div>
-                            </div>
-                            <div class="form-group col-md-12">
-                                <label>Email address</label>
-                                <input id="email_address" type="text" name="email_address" class="form-control" placeholder="Email address">
-                                <div id="error_email_address" class="help-block with-errors"></div>
-                            </div>
-                            <div class="form-group col-md-12">
-                                <label>Fax no</label>
-                                <input id="fax_no" type="text" name="fax_no" class="form-control" placeholder="Fax no">
-                                <div id="error_fax_no" class="help-block with-errors"></div>
-                            </div>
-                            <h6>DECLARATION - THESE MUST BE PEOPLE YOU HAVE KNOWN FOR AT LEAST THE PAST 3 YEARS. THEY CANNOT BE A CLOSE RELATIVE OR A PARTNER</h6>
-                            <h6>REFEREE 2</h6>
-                            <div class="form-group col-md-12">
-                                <label>Title of Referee</label>
-                                <input id="title_of_referee_2" type="text" name="title_of_referee_2" class="form-control" placeholder="Title of Referee">
-                                <div id="error_title_of_referee_2" class="help-block with-errors"></div>
-                            </div>
-                            <div class="form-group col-md-12">
-                                <label>Full Name</label>
-                                <input id="full_name_2" type="text" name="full_name_2" class="form-control" placeholder="Full Name">
-                                <div id="error_full_name_2" class="help-block with-errors"></div>
-                            </div>
-                            <div class="form-group col-md-12">
-                                <label>Job Title</label>
-                                <input id="job_title_2" type="text" name="job_title_2" class="form-control" placeholder="Job Title">
-                                <div id="error_job_title_2" class="help-block with-errors"></div>
-                            </div>
-                            <div class="form-group col-md-12">
-                                <label>Date known from</label>
-                                <input id="date_known_from_2" type="text" name="date_known_from_2" class="form-control" placeholder="Date known from">
-                                <div id="error_date_known_from_2" class="help-block with-errors"></div>
-                            </div>
-                            <div class="form-group col-md-12">
-                                <label>Full address</label>
-                                <input id="full_address_2" type="text" name="full_address_2" class="form-control" placeholder="Full address">
-                                <div id="error_full_address_2" class="help-block with-errors"></div>
-                            </div>
-                            <div class="form-group col-md-12">
-                                <label>Telephone no</label>
-                                <input id="telephone_no_2" type="text" name="telephone_no_2" class="form-control" placeholder="Telephone no">
-                                <div id="error_telephone_no_2" class="help-block with-errors"></div>
-                            </div>
-                            <div class="form-group col-md-12">
-                                <label>Email address</label>
-                                <input id="email_address_2" type="text" name="email_address_2" class="form-control" placeholder="Email address">
-                                <div id="error_email_address_2" class="help-block with-errors"></div>
-                            </div>
-                            <div class="form-group col-md-12">
-                                <label>Fax no</label>
-                                <input id="fax_no_2" type="text" name="fax_no_2" class="form-control" placeholder="Fax no">
-                                <div id="error_fax_no_2" class="help-block with-errors"></div>
-                            </div>
-                            <div class="form-group col-md-12">
-                                <label>Uniform measurements</label>
-                                <input id="uniform_measurements" type="file" name="uniform_measurements" class="form-control">
-                                <div id="error_uniform_measurements" class="help-block with-errors"></div>
-                            </div>
-                            <div class="form-group col-md-12">
-                                <label>Please upload a clear photo of yourself</label>
-                                <input id="photo_of_yourself" type="file" name="photo_of_yourself" class="form-control">
-                                <div id="error_photo_of_yourself" class="help-block with-errors"></div>
-                            </div>
-                            <div class="form-group col-md-12">
-                                <label>Please upload Proof of Address less than two months old e.g. Bank Statements/ Utility Bills</label>
-                                <input id="proof_of_address" type="file" name="proof_of_address" class="form-control">
-                                <div id="error_proof_of_address" class="help-block with-errors"></div>
-                            </div>
-                            <div class="form-group col-md-12">
-                                <label>Please upload Copies of Insurance held (if applicable)</label>
-                                <input id="insurance_held" type="file" name="insurance_held" class="form-control">
-                                <div id="error_insurance_held" class="help-block with-errors"></div>
-                            </div>
-                            <div class="form-group col-md-12">
-                                <label>Please upload your SIA badge</label>
-                                <input id="sia_badge" type="file" name="sia_badge" class="form-control">
-                                <div id="error_sia_badge" class="help-block with-errors"></div>
-                            </div>
-                            <h5>DECLARATION OF CONSENT</h5>
-                            <label>I give consent to GLOBAL SECURITY AND CREDIT AGENCY (GSC Agency) to conduct a random Drug/Alcohol Testing I declare that I give my permission for GLOBAL SECURITY AND CREDIT AGENCY LIMITED (GSC Agency) to make a consumer information search with a credit reference agency, which will keep a record of that search and may share that information with other credit reference agencies.</label>
-                            <label>I also understand that any documents presented to establish identity and proof of residence may be checked using an ultra violet scanner and/or other methods or devices to deter identity theft and fraud. Any original documents supporting identity that appear to be forgeries will be directed to the relevant authorities</label>
-                            <label> I give GLOBAL SECURITY AND CREDIT AGENCY (GSC Agency) permission to contact former employers, government departments, personal referees, etc. (if provided) for verification of my career and employment/unemployment records.</label>
-                            <label>I declare that the information given in this application form is correct and complete. I understand that if I have given any misleading information on this form or made any omissions, this will be sufficient grounds for terminating my employment.</label>
-                            <label>TICK the boxes below to give your full consent ( you MUST give consent)</label>
-                            <div class="form-group col-md-12">
-                                <label>
-                                    <input id="tick_box_to_consent" type="checkbox" name="tick_box_to_consent">
-                                    Tick Box to Consent
-                                </label>
-                                <div id="error_tick_box_to_consent" class="help-block with-errors"></div>
-                            </div>  
-                            
-                            <div class="signature">
-                                <div class="form-group">
-                                    <label>Signature:</label>
-                                    <input id="first_name" type="text" name="first_name" class="form-control">
-                                </div>
-                                <div class="form-group">
-                                    <label>Date:</label>
-                                    <input id="first_name" type="text" name="first_name" class="form-control">
+                                <label>Do you hold a full driving licence?</label>
+                                <div class="form-check">
+                                    <div>
+                                        <input type="radio" id="yes" name="licence" value="yes">
+                                        <label for="yes">Yes</label>
+                                    </div>
+                                    <div>
+                                        <input type="radio" id="no" name="licence" value="no">
+                                        <label for="no">No</label>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="form-group col-md-12 mt-4 d-flex form-group-button">
-                                <a class="button" type="button" id="button-contact-us" style="margin-left: auto; margin-right: auto;">
-                                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M17.4885 3.68124C17.47 3.3765 17.3406 3.08907 17.1247 2.87318C16.9088 2.6573 16.6214 2.52789 16.3166 2.50937C15.3338 2.45077 12.8221 2.54062 10.7377 4.62421L10.3666 4.99999H5.80958C5.6448 4.99906 5.48148 5.03091 5.32911 5.09368C5.17675 5.15645 5.03839 5.24889 4.92208 5.36562L2.24239 8.04687C2.07806 8.21109 1.96274 8.41787 1.90939 8.64399C1.85603 8.87011 1.86675 9.10662 1.94034 9.32699C2.01393 9.54736 2.14748 9.74285 2.326 9.89154C2.50452 10.0402 2.72095 10.1362 2.95099 10.1687L5.95646 10.5883L9.41036 14.0422L9.82989 17.0492C9.86216 17.2793 9.95812 17.4957 10.1069 17.6741C10.2558 17.8525 10.4515 17.9856 10.6721 18.0586C10.8005 18.1015 10.9351 18.1234 11.0705 18.1234C11.2345 18.1237 11.3969 18.0916 11.5485 18.0288C11.7 17.9661 11.8376 17.874 11.9533 17.7578L14.6346 15.0781C14.7513 14.9618 14.8438 14.8234 14.9065 14.6711C14.9693 14.5187 15.0011 14.3554 15.0002 14.1906V9.63359L15.3729 9.26093C17.4572 7.17656 17.5471 4.66484 17.4885 3.68124ZM5.80958 6.24999H9.11661L6.02833 9.33749L3.12521 8.9328L5.80958 6.24999ZM11.6229 5.51171C12.2234 4.90744 12.946 4.43828 13.7424 4.13555C14.5387 3.83283 15.3905 3.70351 16.2408 3.75624C16.2956 4.60701 16.1676 5.45964 15.8655 6.25684C15.5634 7.05404 15.0941 7.77733 14.4893 8.37812L10.0002 12.8656L7.13458 9.99999L11.6229 5.51171ZM13.7502 14.1906L11.0682 16.875L10.6627 13.9711L13.7502 10.8836V14.1906ZM7.95646 14.9328C7.60489 15.7031 6.42911 17.5 3.12521 17.5C2.95945 17.5 2.80048 17.4341 2.68326 17.3169C2.56605 17.1997 2.50021 17.0408 2.50021 16.875C2.50021 13.5711 4.29708 12.3953 5.06739 12.043C5.14208 12.0089 5.22275 11.9899 5.30479 11.987C5.38683 11.9841 5.46863 11.9974 5.54553 12.0261C5.62243 12.0549 5.69292 12.0985 5.75297 12.1544C5.81302 12.2104 5.86146 12.2776 5.89552 12.3523C5.92958 12.427 5.9486 12.5077 5.95148 12.5897C5.95437 12.6718 5.94107 12.7536 5.91234 12.8305C5.88361 12.9074 5.84002 12.9779 5.78405 13.0379C5.72808 13.098 5.66083 13.1464 5.58614 13.1805C5.0838 13.4094 3.97521 14.1461 3.77989 16.2203C5.85411 16.025 6.59239 14.9164 6.81974 14.4141C6.8538 14.3394 6.90224 14.2721 6.96229 14.2161C7.02234 14.1602 7.09283 14.1166 7.16973 14.0879C7.24663 14.0591 7.32843 14.0458 7.41047 14.0487C7.49251 14.0516 7.57317 14.0706 7.64786 14.1047C7.72255 14.1387 7.7898 14.1872 7.84577 14.2472C7.90174 14.3073 7.94533 14.3778 7.97406 14.4547C8.00279 14.5316 8.01609 14.6134 8.0132 14.6954C8.01032 14.7774 7.9913 14.8581 7.95724 14.9328H7.95646Z" fill="white" />
-                                    </svg>
-                                    <span>Submit Form <i class="loading"></i></span>
-                                </a>
+                            <div class="form-group col-md-12">
+                                <label>Are you subject to Immigration Control?*</label>
+                                <div class="form-check">
+                                    <div>
+                                        <input type="radio" id="yes" name="immigration" value="yes">
+                                        <label for="yes">Yes</label>
+                                    </div>
+                                    <div>
+                                        <input type="radio" id="no" name="immigration" value="no">
+                                        <label for="no">No</label>
+                                    </div>
+                                </div>
                             </div>
-                            <div id="result_message"></div>
+                            <div class="form-group col-md-12">
+                                <label>Do you have the legal right to work in the UK?*</label>
+                                <div class="form-check">
+                                    <div>
+                                        <input type="radio" id="yes" name="work" value="yes">
+                                        <label for="yes">Yes</label>
+                                    </div>
+                                    <div>
+                                        <input type="radio" id="no" name="work" value="no">
+                                        <label for="no">No</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group col-md-12">
+                                <label>Are you currently on a student visa?*</label>
+                                <div class="form-check">
+                                    <div>
+                                        <input type="radio" id="yes" name="visa" value="yes">
+                                        <label for="yes">Yes</label>
+                                    </div>
+                                    <div>
+                                        <input type="radio" id="no" name="visa" value="no">
+                                        <label for="no">No</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group col-md-12">
+                                <label>Are there any alleged offences outstanding against you?*</label>
+                                <div class="form-check">
+                                    <div>
+                                        <input type="radio" id="yes" name="outstanding" value="yes">
+                                        <label for="yes">Yes</label>
+                                    </div>
+                                    <div>
+                                        <input type="radio" id="no" name="outstanding" value="no">
+                                        <label for="no">No</label>
+                                    </div>
+                                </div>
+                                <input id="middle_name" type="text" name="middle_name" class="form-control" placeholder="Middle name">
+                                <div id="error_middle_name" class="help-block with-errors"></div>
+                            </div>
+                            <div class="form-group col-md-12">
+                                <label>Any additional qualifications e.g. First Aid, Fire Marshall etc</label>
+                                <input id="middle_name" type="text" name="middle_name" class="form-control" placeholder="Middle name">
+                                <div id="error_middle_name" class="help-block with-errors"></div>
+                            </div>
+                            <div class="form-group col-md-12 form-group-buttons">
+                                <button id="buttonBack1">Back</button>
+                                <button id="buttonNext2">Next</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="row row-contact">
+                    <div class="form-group col-md-12">
+                        <div class="line">
+                            <div class="line3"></div>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 form">
+                        <form id="submit-form" class="row">
+                            <div class="form-group col-md-12 mt-6">
+                                <h6>Recent Employment</h6>
+                            </div>
+                            <div class="form-group col-md-12 mt-6">
+                                <label>Company</label>
+                                <input id="type_of_security_badge_attained" type="text" name="type_of_security_badge_attained" class="form-control" placeholder="Title">
+                                <div id="error_type_of_security_badge_attained" class="help-block with-errors"></div>
+                            </div>
+                            <div class="form-group col-md-12">
+                                <label>Position</label>
+                                <input id="first_name" type="text" name="first_name" class="form-control" placeholder="First name">
+                                <div id="error_first_name" class="help-block with-errors"></div>
+                            </div>
+                            <div class="form-group col-md-12">
+                                <label>Address</label>
+                                <input id="middle_name" type="text" name="middle_name" class="form-control" placeholder="Middle name">
+                                <div id="error_middle_name" class="help-block with-errors"></div>
+                            </div>
+                            <div class="form-group col-md-12">
+                                <label>Time at company</label>
+                                <input id="middle_name" type="text" name="middle_name" class="form-control" placeholder="Middle name">
+                                <div id="error_middle_name" class="help-block with-errors"></div>
+                            </div>
+                            <div class="form-group col-md-12">
+                                <button>+ Additional Company</button>
+                            </div>
+                            <div class="form-group col-md-12 form-group-buttons">
+                                <button id="buttonBack2">Back</button>
+                                <button id="buttonNext3">Next</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="row row-contact">
+                    <div class="form-group col-md-12">
+                        <div class="line">
+                            <div class="line4"></div>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 form">
+                        <form id="submit-form" class="row">
+                            <div class="form-group col-md-12 mt-6">
+                                <h6>Declarations</h6>
+                            </div>
+                            <p>I give consent to GLOBAL SECURITY AND CREDIT AGENCY (GSC Agency) to conduct a random Drug/Alcohol Testing.</p>
+                            <p>I declare that I give my permission for GLOBAL SECURITY AND CREDIT AGENCY LIMITED (GSC Agency) to make a consumer information search with a credit reference agency, which will keep a record of that search and may share that information with other credit reference agencies. I also understand that any documents presented to establish identity and proof of residence may be checked using an ultra violet scanner and/or other methods or devices to deter identity theft and fraud. Any original documents supporting identity that appear to be forgeries will be directed to the relevant authorities.</p>
+                            <p>I give GLOBAL SECURITY AND CREDIT AGENCY (GSC Agency) permission to contact former employers, government departments, personal referees, etc. (if provided) for verification of my career and employment/unemployment records.</p>
+                            <p>I declare that the information given in this application form is correct and complete. I understand that if I have given any misleading information on this form or made any omissions, this will be sufficient grounds for terminating my employment.</p>
+                            <div style="text-align: center;">
+                                <input type="radio" id="yes" name="work" value="yes">
+                                <label for="yes">Please TICK to give your full consent</label>
+                            </div>
+                            <p style="font-style: italic; text-align: center; margin-bottom: 30px;">To proceed with your application, you must tick the box above.</p>
+                            <div class="form-group col-md-12 form-group-buttons">
+                                <button id="buttonBack3">Back</button>
+                                <button id="buttonNext4">Next</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="row row-contact">
+                    <div class="form-group col-md-12">
+                        <div class="line">
+                            <div class="line5"></div>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 form">
+                        <form id="submit-form" class="row">
+                            <div class="form-group col-md-12 mt-6">
+                                <h6>Checklist & Attachments</h6>
+                            </div>
+                            <div class="form-group col-md-12">
+                                <div style="width: fit-content; margin: 0 auto;">
+                                    <div>
+                                        <input type="radio" id="yes" name="work" value="yes">
+                                        <label for="yes">SIA Badge</label>
+                                    </div>
+                                    <div>
+                                        <input type="radio" id="yes" name="work" value="yes">
+                                        <label for="yes">Proof of address</label>
+                                    </div>
+                                    <div>
+                                        <input type="radio" id="yes" name="work" value="yes">
+                                        <label for="yes">Photo of yourself</label>
+                                    </div>
+                                    <div>
+                                        <input type="radio" id="yes" name="work" value="yes">
+                                        <label for="yes">Right to work</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group col-md-6">
+                                <label>SIA Badge Upload <span>*</span></label>
+                                <input id="middle_name" type="file" name="middle_name" class="form-control" placeholder="Middle name">
+                                <div id="error_middle_name" class="help-block with-errors"></div>
+                            </div>
+                            <div class="form-group col-md-6">
+                                <label>Proof of address Upload <span>*</span></label>
+                                <input id="middle_name" type="file" name="middle_name" class="form-control" placeholder="Middle name">
+                                <div id="error_middle_name" class="help-block with-errors"></div>
+                            </div>
+                            <div class="form-group col-md-6">
+                                <label>Right to work Upload <span>*</span></label>
+                                <input id="middle_name" type="file" name="middle_name" class="form-control" placeholder="Middle name">
+                                <div id="error_middle_name" class="help-block with-errors"></div>
+                            </div>
+                            <div class="form-group col-md-6">
+                                <label>Photo of yourself Upload <span>*</span></label>
+                                <input id="middle_name" type="file" name="middle_name" class="form-control" placeholder="Middle name">
+                                <div id="error_middle_name" class="help-block with-errors"></div>
+                            </div>
+                            <div class="form-group col-md-6">
+                                <label>Signature <span>*</span></label>
+                                <input id="middle_name" type="file" name="middle_name" class="form-control" placeholder="Middle name">
+                                <div id="error_middle_name" class="help-block with-errors"></div>
+                            </div>
+                            <div class="form-group col-md-6">
+                                <label>Date</label>
+                                <input id="middle_name" type="text" name="middle_name" class="form-control" placeholder="Date">
+                                <div id="error_middle_name" class="help-block with-errors"></div>
+                            </div>
+                            <div class="form-group col-md-12">
+                                <p><em>Thank you for completing your application. GSC may reach out if we have any questions or need further information. We'll be in touch soon with an update on your application.</em></p>
+                            </div>
+                            <div class="form-group col-md-12 form-group-buttons center">
+                                <button>Submit</button>
+                            </div>
                         </form>
                     </div>
                 </div>

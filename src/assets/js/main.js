@@ -11,7 +11,7 @@ $(document).ready(function () {
 
     $(function () {
         $('[data-toggle="tooltip"]').tooltip()
-    })
+    });
 
     $('#aboutus-slide .numbers li').on('click', function () {
         $('.aboutus-slide-content').removeClass('active');
@@ -28,6 +28,73 @@ $(document).ready(function () {
 
         $('html, body').animate({
             scrollTop: $('.legal-slide-content.active').offset().top
+        }, 300);
+    });
+
+    $('#buttonNext1').on('click', function (e) {
+        $('.row-contact').removeClass('active');
+        $('.row-contact').eq(1).addClass('active');
+        $('html, body').animate({ scrollTop: 0 }, 300);
+        e.preventDefault();
+    });
+
+    $('#buttonNext2').on('click', function (e) {
+        $('.row-contact').removeClass('active');
+        $('.row-contact').eq(2).addClass('active');
+        $('html, body').animate({ scrollTop: 0 }, 300);
+        e.preventDefault();
+    });
+
+    $('#buttonNext3').on('click', function (e) {
+        $('.row-contact').removeClass('active');
+        $('.row-contact').eq(3).addClass('active');
+        $('html, body').animate({ scrollTop: 0 }, 300);
+        e.preventDefault();
+    });
+
+    $('#buttonNext4').on('click', function (e) {
+        $('.row-contact').removeClass('active');
+        $('.row-contact').eq(4).addClass('active');
+        $('html, body').animate({ scrollTop: 0 }, 300);
+        e.preventDefault();
+    });
+
+    $('#buttonBack1').on('click', function (e) {
+        $('.row-contact').removeClass('active');
+        $('.row-contact').eq(1).addClass('active');
+        $('html, body').animate({ scrollTop: 0 }, 300);
+        e.preventDefault();
+    });
+
+    $('#buttonBack2').on('click', function (e) {
+        $('.row-contact').removeClass('active');
+        $('.row-contact').eq(2).addClass('active');
+        $('html, body').animate({ scrollTop: 0 }, 300);
+        e.preventDefault();
+    });
+
+    $('#buttonBack3').on('click', function (e) {
+        $('.row-contact').removeClass('active');
+        $('.row-contact').eq(3).addClass('active');
+        $('html, body').animate({ scrollTop: 0 }, 300);
+        e.preventDefault();
+    });
+
+    $("#link-meet").on('click', function () {
+        $('html, body').animate({
+            scrollTop: $('.section-team').offset().top - 20
+        }, 300);
+    });
+
+    $("#link-apply").on('click', function () {
+        $('html, body').animate({
+            scrollTop: $('#section-apply').offset().top - 50
+        }, 300);
+    });
+
+    $("#link-work").on('click', function () {
+        $('html, body').animate({
+            scrollTop: $('.section-work-with-us').offset().top - 50
         }, 300);
     });
 

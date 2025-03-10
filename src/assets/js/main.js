@@ -61,21 +61,21 @@ $(document).ready(function () {
 
     $('#buttonBack1').on('click', function (e) {
         $('.row-contact').removeClass('active');
-        $('.row-contact').eq(1).addClass('active');
+        $('.row-contact').eq(0).addClass('active');
         $('html, body').animate({ scrollTop: 0 }, 300);
         e.preventDefault();
     });
 
     $('#buttonBack2').on('click', function (e) {
         $('.row-contact').removeClass('active');
-        $('.row-contact').eq(2).addClass('active');
+        $('.row-contact').eq(1).addClass('active');
         $('html, body').animate({ scrollTop: 0 }, 300);
         e.preventDefault();
     });
 
     $('#buttonBack3').on('click', function (e) {
         $('.row-contact').removeClass('active');
-        $('.row-contact').eq(3).addClass('active');
+        $('.row-contact').eq(2).addClass('active');
         $('html, body').animate({ scrollTop: 0 }, 300);
         e.preventDefault();
     });

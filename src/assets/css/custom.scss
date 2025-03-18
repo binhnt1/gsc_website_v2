@@ -126,11 +126,17 @@ $greyishBrown: #404040;
                 padding: 0.5rem 2rem !important;
 
                 &.active {
-                    display: block;
-                    background: none;
                     font-weight: bold;
-                    border-radius: unset;
-                    border-bottom: 2px solid #000;
+
+                    &:before {
+                        top: 0;
+                        bottom: 0;
+                        width: 100%;
+                        display: block;
+                        position: absolute;
+                        border-radius: unset;
+                        border-bottom: 2px solid #000;
+                    }
                 }
 
                 &:hover {
@@ -906,7 +912,7 @@ $greyishBrown: #404040;
         padding-bottom: 20px;
 
         p.lead {
-            font-size: 32px;
+            font-size: 36px;
             font-weight: 500;
             color: #181818;
 
@@ -996,7 +1002,9 @@ $greyishBrown: #404040;
             }
 
             h3 {
-                font-size: 32px;
+                height: 92px;
+                font-size: 28px;
+                text-align: center;
             }
 
             h2 {
@@ -1116,6 +1124,12 @@ $greyishBrown: #404040;
         padding-top: 60px;
         border-radius: 40px;
         padding-bottom: 60px;
+
+        .sub-header {
+            span {
+                font-size: 24px;
+            }
+        }
 
         .top-header {
             margin-bottom: 40px;
@@ -2378,22 +2392,24 @@ $greyishBrown: #404040;
     }
 
     .links {
-        gap: 80px;
         margin: 0;
         padding: 0;
         display: flex;
         margin-top: 30px;
         margin-bottom: 60px;
         align-items: center;
-        justify-content: center;
+        justify-content: space-around;
 
         li {
             list-style: none;
 
             a {
+                width: 250px;
+                display: block;
                 cursor: pointer;
                 font-size: 20px;
                 font-weight: 500;
+                text-align: center;
                 padding: 15px 30px;
                 border-radius: 10px;
                 background-color: rgba($color: gray, $alpha: 0.12);
@@ -2558,6 +2574,10 @@ $greyishBrown: #404040;
         align-items: center;
         justify-content: flex-start;
         border-left: 1px solid $borderColor;
+
+        span {
+            font-size: 24px;
+        }
     }
 
     .faq-header {
@@ -2732,21 +2752,31 @@ $greyishBrown: #404040;
 
     .icons {
         margin: 0;
+        gap: 160px;
         padding: 0;
         display: flex;
         align-items: center;
         margin-bottom: 100px;
         justify-content: space-evenly;
 
+        &:last-of-type {
+            gap: 140px;
+        }
+
         li {
             gap: 10px;
             margin: 0;
             padding: 0;
+            width: 160px;
             display: flex;
             list-style: none;
             align-items: center;
             flex-direction: column;
             justify-content: center;
+
+            p {
+                text-align: center;
+            }
 
             img {
                 width: 80px;
@@ -2823,6 +2853,9 @@ $greyishBrown: #404040;
         align-items: center;
         justify-content: flex-start;
         border-left: 1px solid $borderColor;
+        span {
+            font-size: 24px;
+        }
     }
 
     ul.paging {

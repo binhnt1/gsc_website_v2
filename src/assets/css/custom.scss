@@ -407,7 +407,8 @@ $greyishBrown: #404040;
             background-color: #182237;
 
             span {
-                font-size: 36px;
+                font-size: 32px;
+                font-weight: normal;
             }
         }
     }
@@ -912,7 +913,7 @@ $greyishBrown: #404040;
         padding-bottom: 20px;
 
         p.lead {
-            font-size: 36px;
+            font-size: 32px;
             font-weight: 500;
             color: #181818;
 
@@ -1130,7 +1131,8 @@ $greyishBrown: #404040;
 
         .sub-header {
             span {
-                font-size: 24px;
+                font-size: 32px;
+                font-weight: normal;
             }
         }
 
@@ -2250,7 +2252,7 @@ $greyishBrown: #404040;
 .section-team {
     .top-header {
         .lead {
-            font-size: 36px;
+            font-size: 32px;
             color: #181818;
             text-align: center;
             font-weight: normal;
@@ -2484,7 +2486,7 @@ $greyishBrown: #404040;
     .header {
         display: flex;
         margin: 0 auto;
-        font-size: 36px;
+        font-size: 32px;
         width: fit-content;
         padding: 20px 30px;
         align-items: center;
@@ -2883,8 +2885,14 @@ $greyishBrown: #404040;
         align-items: center;
         justify-content: center;
 
+        &.left {
+            padding-left: 0;
+            justify-content: flex-start;
+        }
+
         span {
-            font-size: 36px;
+            font-size: 32px;
+            font-weight: normal;
         }
     }
 

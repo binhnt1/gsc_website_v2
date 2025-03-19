@@ -1007,9 +1007,13 @@ $greyishBrown: #404040;
             }
 
             h3 {
-                font-size: 24px;
+                display: flex;
+                font-size: 28px;
                 font-weight: 500;
+                min-height: 92px;
                 text-align: center;
+                align-items: center;
+                justify-content: center;
             }
 
             h2 {

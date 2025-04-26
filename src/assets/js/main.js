@@ -369,10 +369,6 @@ $(document).ready(function () {
         });
     });
 
-    document.getElementById('button-contact-us').addEventListener('click', function (event) {
-
-    });
-
     $("#form_eventDateTo").on("change", function () {
         if (this.value) {
             this.setAttribute(
@@ -396,6 +392,79 @@ $(document).ready(function () {
     setInterval(function () {
         $('.es-portal-root a').remove();
     }, 1000);
+
+
+    const options = {
+        autoClose: true,
+        dateFormat: 'dd/MM/yyyy',
+        locale: {
+            days: ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'],
+            daysShort: ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'],
+            daysMin: ['Su', 'Mo', 'Tu', 'We', 'Th', 'Fr', 'Sa'],
+            months: ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'],
+            monthsShort: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'],
+            today: 'Today',
+            clear: 'Clear',
+            firstDay: 0
+        }
+    };
+    new AirDatepicker('#DateOfBirth', options);
+    new AirDatepicker('#ApplicationDate', options);
+
+    $('#addAdditionalCompany').click(function (e) {
+        e.preventDefault();
+
+        let lastSection = document.querySelector('.employment-entry:last-child');
+        let columns = ['Company', 'Position', 'Address', 'TimeAtCompany'];
+        let valid = validateRequiredFields(columns, lastSection);
+
+        if (valid) {
+            var newEntry = $('.employment-entry:first').clone();
+            newEntry.find('input').val('');
+            newEntry.find('input').each(function () {
+                let name = $(this).attr("name");
+                if (name) {
+                    $(this).attr("name", name + "_" + ($('.employment-entry').length + 1));
+                }
+            });
+            newEntry.appendTo('#employment-sections');
+        }
+    });
+
+    $('#buttonSecurityFormStep1').on('click', function (e) {
+        let columns = ['Title', 'FirstName', 'SurName', 'DateOfBirth', 'Email', 'Mobile', 'Address', 'City', 'PostCode', 'Gender', 'Nationality'];
+        autoFillFormData(columns);
+        let valid = validateRequiredFields(columns);
+        if (valid) {
+            $('.row-contact').removeClass('active');
+            $('.row-contact').eq(1).addClass('active');
+            $('html, body').animate({ scrollTop: 0 }, 300);
+        }
+        e.preventDefault();
+    });
+
+    $('#buttonSecurityFormStep2').on('click', function (e) {
+        let columns = ['TypeOfSecurity', 'SIALicenceNo', 'UTRNo', 'HoldDrivingLicenceYes', 'ImmigrationControlYes', 'LegalRightToWorkYes', 'StudentVisaYes', 'AllegedOffencesOutstandingYes'];
+        let valid = validateRequiredFields(columns);
+        if (valid) {
+            $('.row-contact').removeClass('active');
+            $('.row-contact').eq(2).addClass('active');
+            $('html, body').animate({ scrollTop: 0 }, 300);
+        }
+        e.preventDefault();
+    });
+
+    $('#buttonSecurityFormStep3').on('click', function (e) {
+        let lastSection = document.querySelector('.employment-entry:last-child');
+        let columns = ['Company', 'Position', 'Address', 'TimeAtCompany'];
+        let valid = validateRequiredFields(columns, lastSection);
+        if (valid) {
+            $('.row-contact').removeClass('active');
+            $('.row-contact').eq(3).addClass('active');
+            $('html, body').animate({ scrollTop: 0 }, 300);
+        }
+        e.preventDefault();
+    });
 });
 
 function getDomain() {
@@ -410,7 +479,49 @@ function getDomain() {
         .split('/')[0];
     return domain.toLowerCase();
 }
+function autoFillFormData(fieldIds) {
+    fieldIds.forEach(id => {
+        let input = document.getElementById(id);
+        if (!input) return;
 
+        if (input.type === "text" && !input.classList.contains("air-datepicker")) {
+            input.value = "Test Data";
+            input.dispatchEvent(new Event("input"));
+        }
+        else if (input.type === "tel") {
+            input.value = "0123456789"; // Giả lập số điện thoại
+            input.dispatchEvent(new Event("input"));
+        }
+        else if (input.type === "email") {
+            input.value = "test@example.com"; // Giả lập email
+            input.dispatchEvent(new Event("input"));
+        }
+        else if (input.type === "radio") {
+            let radios = document.querySelectorAll(`input[name="${input.name}"]`);
+            if (radios.length > 0) {
+                radios[0].checked = true;
+                radios[0].dispatchEvent(new Event("change"));
+            }
+        }
+        else if (input.tagName.toLowerCase() === "select") {
+            if (input.options.length > 1) {
+                input.selectedIndex = 1;
+                input.dispatchEvent(new Event("change"));
+            }
+        }
+        else if (input.classList.contains("air-datepicker")) {
+            let today = new Date().toISOString().split("T")[0];
+            input.value = today;
+            input.dispatchEvent(new Event("input"));
+
+            if (input.airDatepicker) {
+                input.airDatepicker.selectDate(new Date());
+            }
+        }
+    });
+
+    console.log("✅ Selected form fields have been auto-filled!");
+}
 function checkFileSize(file, maxSizeMB) {
     if (!file) return true;
     const maxSizeBytes = maxSizeMB * 1024 * 1024;
@@ -419,6 +530,74 @@ function checkFileSize(file, maxSizeMB) {
         return false;
     }
     return true;
+}
+function validateRequiredFields(fieldIds, section = document) {
+    let isValid = true;
+
+    fieldIds.forEach(inputId => {
+        let input = section.querySelector(`#${inputId}`);
+        let errorDiv = section.querySelector(`#error_${inputId}`);
+
+        if (!input) return; // Bỏ qua nếu input không tồn tại trong section
+
+        if (!errorDiv) {
+            errorDiv = document.createElement("div");
+            errorDiv.id = `error_${inputId}`;
+            errorDiv.className = "help-block with-errors";
+            input.parentNode.appendChild(errorDiv);
+        }
+
+        if (input.type === "radio") {
+            let name = input.name;
+            let radios = section.querySelectorAll(`input[name="${name}"]`);
+            let isChecked = Array.from(radios).some(radio => radio.checked);
+
+            if (!isChecked) {
+                errorDiv.style.color = "red";
+                errorDiv.style.display = "block";
+                errorDiv.textContent = "Please select an option!";
+                isValid = false;
+            } else {
+                errorDiv.textContent = "";
+                errorDiv.style.display = "none";
+            }
+
+            if (!input.dataset.hasEventListener) {
+                radios.forEach(radio => {
+                    radio.addEventListener("change", function () {
+                        errorDiv.textContent = "";
+                        errorDiv.style.display = "none";
+                    });
+                });
+                input.dataset.hasEventListener = "true";
+            }
+        } else {
+            if (input.value.trim() === "") {
+                errorDiv.style.color = "red";
+                errorDiv.style.display = "block";
+                input.classList.add("border-danger");
+                errorDiv.textContent = "This field is required!";
+                isValid = false;
+            } else {
+                errorDiv.textContent = "";
+                errorDiv.style.display = "none";
+                input.classList.remove("border-danger");
+            }
+
+            if (!input.dataset.hasEventListener) {
+                input.addEventListener("input", function () {
+                    if (input.value.trim() !== "") {
+                        errorDiv.textContent = "";
+                        errorDiv.style.display = "none";
+                        input.classList.remove("border-danger");
+                    }
+                });
+                input.dataset.hasEventListener = "true";
+            }
+        }
+    });
+
+    return isValid;
 }
 
 // JavaScript để làm cho phần tử sticky

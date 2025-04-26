@@ -35,6 +35,8 @@
     <link href="assets/css/custom.css" rel="stylesheet" type="text/css" />
     <link href="assets/css/custom.large.css" rel="stylesheet" type="text/css" />
     <link href="assets/css/custom.mobile.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/air-datepicker@3.4.0/air-datepicker.css">
+    <script src="https://cdn.jsdelivr.net/npm/air-datepicker@3.4.0/air-datepicker.js"></script>
 
 </head>
 
@@ -128,69 +130,85 @@
                             <div class="form-group col-md-12 mt-6">
                                 <h6>Personal Information</h6>
                             </div>
-                            <div class="form-group col-md-12 mt-6">
-                                <label>Title</label>
-                                <input id="type_of_security_badge_attained" type="text" name="type_of_security_badge_attained" class="form-control" placeholder="Title">
-                                <div id="error_type_of_security_badge_attained" class="help-block with-errors"></div>
-                            </div>
+
                             <div class="form-group col-md-12">
-                                <label>First name</label>
-                                <input id="first_name" type="text" name="first_name" class="form-control" placeholder="First name">
-                                <div id="error_first_name" class="help-block with-errors"></div>
+                                <label class="required">Title</label>
+                                <input id="Title" type="text" name="Title" class="form-control" placeholder="Title">
+                                <div id="error_Title" class="help-block with-errors"></div>
                             </div>
+
                             <div class="form-group col-md-12">
-                                <label>Middle name</label>
-                                <input id="middle_name" type="text" name="middle_name" class="form-control" placeholder="Middle name">
-                                <div id="error_middle_name" class="help-block with-errors"></div>
+                                <label class="required">First Name</label>
+                                <input id="FirstName" type="text" name="FirstName" class="form-control" placeholder="First name">
+                                <div id="error_FirstName" class="help-block with-errors"></div>
                             </div>
+
                             <div class="form-group col-md-12">
-                                <label>Surname</label>
-                                <input id="telephone_business" type="text" name="telephone_business" class="form-control" placeholder="Surname">
-                                <div id="error_telephone_business" class="help-block with-errors"></div>
+                                <label>Middle Name</label>
+                                <input id="MiddleName" type="text" name="MiddleName" class="form-control" placeholder="Middle name">
+                                <div id="error_MiddleName" class="help-block with-errors"></div>
                             </div>
+
                             <div class="form-group col-md-12">
-                                <label>Date of Birth</label>
-                                <input id="telephone_mobile" type="text" name="telephone_mobile" class="form-control" placeholder="Date of Birth">
-                                <div id="error_telephone_mobile" class="help-block with-errors"></div>
+                                <label class="required">Surname</label>
+                                <input id="SurName" type="text" name="SurName" class="form-control" placeholder="Surname">
+                                <div id="error_SurName" class="help-block with-errors"></div>
                             </div>
+
                             <div class="form-group col-md-12">
-                                <label>Email address</label>
-                                <input id="email_address" type="email" name="email_address" class="form-control" placeholder="Email address">
-                                <div id="error_email_address" class="help-block with-errors"></div>
+                                <label class="required">Date of Birth</label>
+                                <input id="DateOfBirth" type="text" name="DateOfBirth" class="form-control" placeholder="DD/MM/YYYY">
+                                <div id="error_DateOfBirth" class="help-block with-errors"></div>
                             </div>
+
                             <div class="form-group col-md-12">
-                                <label>Mobile number</label>
-                                <input id="present_address" type="text" name="present_address" class="form-control" placeholder="Mobile number">
-                                <div id="error_present_address" class="help-block with-errors"></div>
+                                <label class="required">Email Address</label>
+                                <input id="Email" type="email" name="Email" class="form-control" placeholder="Email address">
+                                <div id="error_Email" class="help-block with-errors"></div>
                             </div>
+
                             <div class="form-group col-md-12">
-                                <label>Address line</label>
-                                <input id="national_insurance_number" type="text" name="national_insurance_number" class="form-control" placeholder="Address line">
-                                <div id="error_national_insurance_number" class="help-block with-errors"></div>
+                                <label class="required">Mobile Number</label>
+                                <input id="Mobile" type="tel" name="Mobile" class="form-control" placeholder="Mobile number">
+                                <div id="error_Mobile" class="help-block with-errors"></div>
                             </div>
+
                             <div class="form-group col-md-12">
-                                <label>City</label>
-                                <input id="city" type="text" name="city" class="form-control" placeholder="City">
-                                <div id="error_city" class="help-block with-errors"></div>
+                                <label class="required">Address Line</label>
+                                <input id="Address" type="text" name="Address" class="form-control" placeholder="Address line">
+                                <div id="error_Address" class="help-block with-errors"></div>
                             </div>
+
                             <div class="form-group col-md-12">
-                                <label>Postcode</label>
-                                <input id="post_code" type="text" name="post_code" class="form-control" placeholder="Post code">
-                                <div id="error_post_code" class="help-block with-errors"></div>
+                                <label class="required">City</label>
+                                <input id="City" type="text" name="City" class="form-control" placeholder="City">
+                                <div id="error_City" class="help-block with-errors"></div>
                             </div>
+
                             <div class="form-group col-md-12">
-                                <label>Gender</label>
-                                <input id="post_code" type="text" name="post_code" class="form-control" placeholder="Gender">
-                                <div id="error_post_code" class="help-block with-errors"></div>
+                                <label class="required">Postcode</label>
+                                <input id="PostCode" type="text" name="PostCode" class="form-control" placeholder="Post code">
+                                <div id="error_PostCode" class="help-block with-errors"></div>
                             </div>
+
                             <div class="form-group col-md-12">
-                                <label>Nationality</label>
-                                <input id="nationality" type="text" name="nationality" class="form-control" placeholder="Nationality">
-                                <div id="error_nationality" class="help-block with-errors"></div>
+                                <label for="Gender" class="required">Gender</label>
+                                <select id="Gender" name="Gender" class="form-control">
+                                    <option value="">Select Gender</option>
+                                    <option value="Male">Male</option>
+                                    <option value="Female">Female</option>
+                                </select>
+                                <div id="error_Gender" class="help-block with-errors"></div>
+                            </div>
+
+                            <div class="form-group col-md-12">
+                                <label class="required">Nationality</label>
+                                <input id="Nationality" type="text" name="Nationality" class="form-control" placeholder="Nationality">
+                                <div id="error_Nationality" class="help-block with-errors"></div>
                             </div>
                             <div class="form-group col-md-12 form-group-buttons">
                                 <button style="opacity: 0;">&nbsp;</button>
-                                <button id="buttonNext1">Next</button>
+                                <button id="buttonSecurityFormStep1">Next</button>
                             </div>
                         </form>
                     </div>
@@ -206,98 +224,107 @@
                             <div class="form-group col-md-12 mt-6">
                                 <h6>Security Information</h6>
                             </div>
+
                             <div class="form-group col-md-12 mt-6">
-                                <label>Type of security badge attained</label>
-                                <input id="type_of_security_badge_attained" type="text" name="type_of_security_badge_attained" class="form-control" placeholder="Title">
-                                <div id="error_type_of_security_badge_attained" class="help-block with-errors"></div>
+                                <label class="required">Type of security badge attained</label>
+                                <input id="TypeOfSecurity" type="text" name="TypeOfSecurity" class="form-control" placeholder="Title">
+                                <div id="error_TypeOfSecurity" class="help-block with-errors"></div>
                             </div>
+
                             <div class="form-group col-md-12">
-                                <label>Please enter your valid SIA Licence No. If you do not please indicate with n/a</label>
-                                <input id="first_name" type="text" name="first_name" class="form-control" placeholder="First name">
-                                <div id="error_first_name" class="help-block with-errors"></div>
+                                <label class="required">Please enter your valid SIA Licence No. If you do not, please indicate with n/a</label>
+                                <input id="SIALicenceNo" type="text" name="SIALicenceNo" class="form-control" placeholder="SIA Licence No">
+                                <div id="error_SIALicenceNo" class="help-block with-errors"></div>
                             </div>
+
                             <div class="form-group col-md-12">
-                                <label>Please enter your UTR No. If you do not please indicate with n/a</label>
-                                <input id="middle_name" type="text" name="middle_name" class="form-control" placeholder="Middle name">
-                                <div id="error_middle_name" class="help-block with-errors"></div>
+                                <label class="required">Please enter your UTR No. If you do not, please indicate with n/a</label>
+                                <input id="UTRNo" type="text" name="UTRNo" class="form-control" placeholder="UTR No">
+                                <div id="error_UTRNo" class="help-block with-errors"></div>
                             </div>
+
                             <div class="form-group col-md-12">
-                                <label>Do you hold a full driving licence?</label>
+                                <label class="required">Do you hold a full driving licence?</label>
                                 <div class="form-check">
                                     <div>
-                                        <input type="radio" id="yes" name="licence" value="yes">
-                                        <label for="yes">Yes</label>
+                                        <input type="radio" id="HoldDrivingLicenceYes" name="HoldDrivingLicence" value="true">
+                                        <label for="HoldDrivingLicenceYes">Yes</label>
                                     </div>
                                     <div>
-                                        <input type="radio" id="no" name="licence" value="no">
-                                        <label for="no">No</label>
+                                        <input type="radio" id="HoldDrivingLicenceNo" name="HoldDrivingLicence" value="false">
+                                        <label for="HoldDrivingLicenceNo">No</label>
                                     </div>
                                 </div>
                             </div>
+
                             <div class="form-group col-md-12">
-                                <label>Are you subject to Immigration Control?*</label>
+                                <label class="required">Are you subject to Immigration Control?</label>
                                 <div class="form-check">
                                     <div>
-                                        <input type="radio" id="yes" name="immigration" value="yes">
-                                        <label for="yes">Yes</label>
+                                        <input type="radio" id="ImmigrationControlYes" name="ImmigrationControl" value="true">
+                                        <label for="ImmigrationControlYes">Yes</label>
                                     </div>
                                     <div>
-                                        <input type="radio" id="no" name="immigration" value="no">
-                                        <label for="no">No</label>
+                                        <input type="radio" id="ImmigrationControlNo" name="ImmigrationControl" value="false">
+                                        <label for="ImmigrationControlNo">No</label>
                                     </div>
                                 </div>
                             </div>
+
                             <div class="form-group col-md-12">
-                                <label>Do you have the legal right to work in the UK?*</label>
+                                <label class="required">Do you have the legal right to work in the UK?</label>
                                 <div class="form-check">
                                     <div>
-                                        <input type="radio" id="yes" name="work" value="yes">
-                                        <label for="yes">Yes</label>
+                                        <input type="radio" id="LegalRightToWorkYes" name="LegalRightToWork" value="true">
+                                        <label for="LegalRightToWorkYes">Yes</label>
                                     </div>
                                     <div>
-                                        <input type="radio" id="no" name="work" value="no">
-                                        <label for="no">No</label>
+                                        <input type="radio" id="LegalRightToWorkNo" name="LegalRightToWork" value="false">
+                                        <label for="LegalRightToWorkNo">No</label>
                                     </div>
                                 </div>
                             </div>
+
                             <div class="form-group col-md-12">
-                                <label>Are you currently on a student visa?*</label>
+                                <label class="required">Are you currently on a student visa?</label>
                                 <div class="form-check">
                                     <div>
-                                        <input type="radio" id="yes" name="visa" value="yes">
-                                        <label for="yes">Yes</label>
+                                        <input type="radio" id="StudentVisaYes" name="StudentVisa" value="true">
+                                        <label for="StudentVisaYes">Yes</label>
                                     </div>
                                     <div>
-                                        <input type="radio" id="no" name="visa" value="no">
-                                        <label for="no">No</label>
+                                        <input type="radio" id="StudentVisaNo" name="StudentVisa" value="false">
+                                        <label for="StudentVisaNo">No</label>
                                     </div>
                                 </div>
                             </div>
+
                             <div class="form-group col-md-12">
-                                <label>Are there any alleged offences outstanding against you?*</label>
+                                <label class="required">Are there any alleged offences outstanding against you?</label>
                                 <div class="form-check">
                                     <div>
-                                        <input type="radio" id="yes" name="outstanding" value="yes">
-                                        <label for="yes">Yes</label>
+                                        <input type="radio" id="AllegedOffencesOutstandingYes" name="AllegedOffencesOutstanding" value="true">
+                                        <label for="AllegedOffencesOutstandingYes">Yes</label>
                                     </div>
                                     <div>
-                                        <input type="radio" id="no" name="outstanding" value="no">
-                                        <label for="no">No</label>
+                                        <input type="radio" id="AllegedOffencesOutstandingNo" name="AllegedOffencesOutstanding" value="false">
+                                        <label for="AllegedOffencesOutstandingNo">No</label>
                                     </div>
                                 </div>
-                                <input id="middle_name" type="text" name="middle_name" class="form-control" placeholder="Middle name">
-                                <div id="error_middle_name" class="help-block with-errors"></div>
                             </div>
+
                             <div class="form-group col-md-12">
                                 <label>Any additional qualifications e.g. First Aid, Fire Marshall etc</label>
-                                <input id="middle_name" type="text" name="middle_name" class="form-control" placeholder="Middle name">
-                                <div id="error_middle_name" class="help-block with-errors"></div>
+                                <input id="AdditionalQualifications" type="text" name="AdditionalQualifications" class="form-control" placeholder="Additional qualifications">
+                                <div id="error_AdditionalQualifications" class="help-block with-errors"></div>
                             </div>
+
                             <div class="form-group col-md-12 form-group-buttons">
                                 <button id="buttonBack1">Back</button>
-                                <button id="buttonNext2">Next</button>
+                                <button id="buttonSecurityFormStep2">Next</button>
                             </div>
                         </form>
+
                     </div>
                 </div>
                 <div class="row row-contact">
@@ -308,37 +335,42 @@
                     </div>
                     <div class="col-sm-12 form">
                         <form id="submit-form" class="row">
-                            <div class="form-group col-md-12 mt-6">
-                                <h6>Recent Employment</h6>
-                            </div>
-                            <div class="form-group col-md-12 mt-6">
-                                <label>Company</label>
-                                <input id="type_of_security_badge_attained" type="text" name="type_of_security_badge_attained" class="form-control" placeholder="Title">
-                                <div id="error_type_of_security_badge_attained" class="help-block with-errors"></div>
+                            <div id="employment-sections">
+                                <div class="employment-entry">
+                                    <div class="form-group col-md-12 mt-6">
+                                        <h6>Recent Employment</h6>
+                                    </div>
+                                    <div class="form-group col-md-12 mt-6">
+                                        <label class="required">Company</label>
+                                        <input id="Company" type="text" name="Company" class="form-control" placeholder="Company">
+                                        <div id="error_Company" class="help-block with-errors"></div>
+                                    </div>
+                                    <div class="form-group col-md-12">
+                                        <label class="required">Position</label>
+                                        <input id="Position" type="text" name="Position" class="form-control" placeholder="Position">
+                                        <div id="error_Position" class="help-block with-errors"></div>
+                                    </div>
+                                    <div class="form-group col-md-12">
+                                        <label class="required">Address</label>
+                                        <input id="Address" type="text" name="Address" class="form-control" placeholder="Address">
+                                        <div id="error_Address" class="help-block with-errors"></div>
+                                    </div>
+                                    <div class="form-group col-md-12">
+                                        <label class="required">Time at company</label>
+                                        <input id="TimeAtCompany" type="text" name="TimeAtCompany" class="form-control" placeholder="Time at company">
+                                        <div id="error_TimeAtCompany" class="help-block with-errors"></div>
+                                    </div>
+                                </div>
                             </div>
                             <div class="form-group col-md-12">
-                                <label>Position</label>
-                                <input id="first_name" type="text" name="first_name" class="form-control" placeholder="First name">
-                                <div id="error_first_name" class="help-block with-errors"></div>
-                            </div>
-                            <div class="form-group col-md-12">
-                                <label>Address</label>
-                                <input id="middle_name" type="text" name="middle_name" class="form-control" placeholder="Middle name">
-                                <div id="error_middle_name" class="help-block with-errors"></div>
-                            </div>
-                            <div class="form-group col-md-12">
-                                <label>Time at company</label>
-                                <input id="middle_name" type="text" name="middle_name" class="form-control" placeholder="Middle name">
-                                <div id="error_middle_name" class="help-block with-errors"></div>
-                            </div>
-                            <div class="form-group col-md-12">
-                                <button>+ Additional Company</button>
+                                <button type="button" id="addAdditionalCompany">+ Additional Company</button>
                             </div>
                             <div class="form-group col-md-12 form-group-buttons">
-                                <button id="buttonBack2">Back</button>
-                                <button id="buttonNext3">Next</button>
+                                <button id="buttonBack2" type="button">Back</button>
+                                <button id="buttonSecurityFormStep3" type="submit">Next</button>
                             </div>
                         </form>
+
                     </div>
                 </div>
                 <div class="row row-contact">
@@ -382,60 +414,55 @@
                             <div class="form-group col-md-12">
                                 <div style="width: fit-content; margin: 0 auto;">
                                     <div>
-                                        <input type="radio" id="yes" name="work" value="yes">
-                                        <label for="yes">SIA Badge</label>
+                                        <input type="checkbox" id="SIALicenceNo" name="SIALicenceNo">
+                                        <label for="SIALicenceNo">SIA Licence</label>
                                     </div>
                                     <div>
-                                        <input type="radio" id="yes" name="work" value="yes">
-                                        <label for="yes">Proof of address</label>
+                                        <input type="checkbox" id="LegalRightToWork" name="LegalRightToWork">
+                                        <label for="LegalRightToWork">Proof of address</label>
                                     </div>
                                     <div>
-                                        <input type="radio" id="yes" name="work" value="yes">
-                                        <label for="yes">Photo of yourself</label>
+                                        <input type="checkbox" id="HoldDrivingLicence" name="HoldDrivingLicence">
+                                        <label for="HoldDrivingLicence">Photo of yourself</label>
                                     </div>
                                     <div>
-                                        <input type="radio" id="yes" name="work" value="yes">
-                                        <label for="yes">Right to work</label>
+                                        <input type="checkbox" id="ImmigrationControl" name="ImmigrationControl">
+                                        <label for="ImmigrationControl">Right to work</label>
                                     </div>
                                 </div>
                             </div>
                             <div class="form-group col-md-6">
-                                <label>SIA Badge Upload <span>*</span></label>
-                                <input id="middle_name" type="file" name="middle_name" class="form-control" placeholder="Middle name">
-                                <div id="error_middle_name" class="help-block with-errors"></div>
+                                <label class="required">SIA Licence Upload</label>
+                                <input id="SIALicenceUpload" type="file" name="SIALicenceUpload" class="form-control">
                             </div>
                             <div class="form-group col-md-6">
-                                <label>Proof of address Upload <span>*</span></label>
-                                <input id="middle_name" type="file" name="middle_name" class="form-control" placeholder="Middle name">
-                                <div id="error_middle_name" class="help-block with-errors"></div>
+                                <label class="required">Proof of address Upload</label>
+                                <input id="LegalRightToWorkUpload" type="file" name="LegalRightToWorkUpload" class="form-control">
                             </div>
                             <div class="form-group col-md-6">
-                                <label>Right to work Upload <span>*</span></label>
-                                <input id="middle_name" type="file" name="middle_name" class="form-control" placeholder="Middle name">
-                                <div id="error_middle_name" class="help-block with-errors"></div>
+                                <label class="required">Right to work Upload</label>
+                                <input id="ImmigrationControlUpload" type="file" name="ImmigrationControlUpload" class="form-control">
                             </div>
                             <div class="form-group col-md-6">
-                                <label>Photo of yourself Upload <span>*</span></label>
-                                <input id="middle_name" type="file" name="middle_name" class="form-control" placeholder="Middle name">
-                                <div id="error_middle_name" class="help-block with-errors"></div>
+                                <label>Photo of yourself Upload</label>
+                                <input id="HoldDrivingLicenceUpload" type="file" name="HoldDrivingLicenceUpload" class="form-control">
                             </div>
                             <div class="form-group col-md-6">
-                                <label>Signature <span>*</span></label>
-                                <input id="middle_name" type="file" name="middle_name" class="form-control" placeholder="Middle name">
-                                <div id="error_middle_name" class="help-block with-errors"></div>
+                                <label class="required">Signature</label>
+                                <input id="Signature" type="file" name="Signature" class="form-control">
                             </div>
                             <div class="form-group col-md-6">
-                                <label>Date</label>
-                                <input id="middle_name" type="text" name="middle_name" class="form-control" placeholder="Date">
-                                <div id="error_middle_name" class="help-block with-errors"></div>
+                                <label class="required">Date</label>
+                                <input id="ApplicationDate" type="text" name="ApplicationDate" class="form-control" placeholder="Date">
                             </div>
                             <div class="form-group col-md-12">
                                 <p><em>Thank you for completing your application. GSC may reach out if we have any questions or need further information. We'll be in touch soon with an update on your application.</em></p>
                             </div>
                             <div class="form-group col-md-12 form-group-buttons center">
-                                <button>Submit</button>
+                                <button type="submit">Submit</button>
                             </div>
                         </form>
+
                     </div>
                 </div>
             </div>

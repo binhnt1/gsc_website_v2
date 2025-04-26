@@ -496,6 +496,10 @@ $greyishBrown: #404040;
                 color: #181818;
                 font-weight: normal;
                 margin-bottom: 10px;
+                &.required:after {
+                    content: " *";
+                    color: red;
+                }
             }
 
             table {
@@ -666,6 +670,15 @@ $greyishBrown: #404040;
             .form-control {
                 border-radius: 12px;
                 border: 1px solid #CCCCCC;
+            }
+
+            .with-errors {
+                font-size: 12px;
+                margin-top: 5px;
+            }
+            
+            .border-danger {
+                border: 1px solid red !important;
             }
         }
 
